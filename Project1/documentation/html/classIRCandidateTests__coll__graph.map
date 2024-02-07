@@ -1,0 +1,7 @@
+<map id="IRCandidateTests" name="IRCandidateTests">
+<area shape="rect" id="node1" title=" " alt="" coords="47,215,182,241"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,53,108"/>
+<area shape="rect" id="node3" href="$classIRCandidate.html" title="A candidate class for an Instant Runoff Candidate. This classs is for holding ballots." alt="" coords="77,81,179,108"/>
+<area shape="rect" id="node4" href="$classCandidate.html" title="An output class from the IBallotProcessing interface. This class holds objects/information for an ele..." alt="" coords="84,5,172,32"/>
+<area shape="rect" id="node5" href="$classBallot.html" title="A Ballot class to hold an individual ballot found in a Instant Runoff election. Each IR Candidate wil..." alt="" coords="217,81,277,108"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="IRVoteSystemTests" name="IRVoteSystemTests">
+<area shape="rect" id="node1" title=" " alt="" coords="157,285,304,312"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,196,53,223"/>
+<area shape="rect" id="node3" href="$classIRBallot.html" title="An output class from the IR Processing class. This class holds objects/information for the IR Vote Sy..." alt="" coords="42,145,115,172"/>
+<area shape="rect" id="node4" href="$classIVoteBallot.html" title="The abstract class where all VoteBallots are inherited from." alt="" coords="19,5,114,32"/>
+<area shape="rect" id="node6" href="$classIBallotProcessing.html" title=" " alt="" coords="142,95,277,121"/>
+<area shape="rect" id="node5" href="$classIRProcessing.html" title="IR Processing is to process all ballots in a .csv file and prepare an organized set of information to..." alt="" coords="178,196,283,223"/>
+<area shape="rect" id="node7" href="$classTableBuilder.html" title=" " alt="" coords="150,5,253,32"/>
+<area shape="rect" id="node8" href="$classAuditFile.html" title="The AuditFile class represents a file that logs information about a voting audit." alt="" coords="287,5,366,32"/>
+<area shape="rect" id="node10" href="$classIVotingSystem.html" title="The abstract class for each voting election system will inherit from." alt="" coords="364,95,481,121"/>
+<area shape="rect" id="node9" href="$classIRVoteSystem.html" title="The voting system to conduct the election and determine a winning candidate." alt="" coords="365,196,478,223"/>
+<area shape="rect" id="node11" href="$classDisplay.html" title="The Display class represents a display that can be used to output information." alt="" coords="403,5,474,32"/>
+</map>

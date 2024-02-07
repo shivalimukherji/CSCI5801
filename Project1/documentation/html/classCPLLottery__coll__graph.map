@@ -1,0 +1,5 @@
+<map id="CPLLottery" name="CPLLottery">
+<area shape="rect" id="node1" title="A class representing a special case for a lottery process for a set of parties in a voting system." alt="" coords="64,95,156,121"/>
+<area shape="rect" id="node2" href="$classISpecialCase.html" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" id="node3" href="$classParty.html" title="A class representing a political party with candidate information and seat limits." alt="" coords="134,5,190,32"/>
+</map>

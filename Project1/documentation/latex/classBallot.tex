@@ -1,0 +1,144 @@
+\hypertarget{classBallot}{}\doxysection{Ballot Class Reference}
+\label{classBallot}\index{Ballot@{Ballot}}
+
+
+A \mbox{\hyperlink{classBallot}{Ballot}} class to hold an individual ballot found in a Instant Runoff election. Each IR \mbox{\hyperlink{classCandidate}{Candidate}} will hold a list of this \mbox{\hyperlink{classBallot}{Ballot}}.  
+
+
+
+
+{\ttfamily \#include $<$Ballot.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBallot_a933603c6255f0960f86b5bf9ead8602c}{Ballot}} (int rank, vector$<$ int $>$ mapping)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBallot}{Ballot}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallot_af9078126260b3f58ea91f6b82797396b}{Ballot}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBallot}{Ballot}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBallot_abeb91e5145bf89bea75f724d41f3c950}\label{classBallot_abeb91e5145bf89bea75f724d41f3c950}} 
+void \mbox{\hyperlink{classBallot_abeb91e5145bf89bea75f724d41f3c950}{increase\+Rank}} ()
+\begin{DoxyCompactList}\small\item\em Is used to increase the ranking variable. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallot_aafc277ac557785d21a1c0f96fad4e50e}{get\+Index}} ()
+\begin{DoxyCompactList}\small\item\em Get the index of ranking in the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallot_a707cc9b0eb60b8013e094fe4a5095aed}{get\+Rank}} ()
+\begin{DoxyCompactList}\small\item\em Get the ranking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBallot_a9da8c48cf668e17f61c5e99ca6f9eeea}{set\+Rank}} (int rank\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the ranking. Error checks if the ranking goes below 0 and if the ranking is beyond the size of the mapping. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classBallot_a797a0c2dd5e49e1c28dacf485e9c4eac}{get\+Mapping}} ()
+\begin{DoxyCompactList}\small\item\em Get the mapping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBallot_ae13a834bcfd39ba48fb0ab6c08c54a89}{set\+Mapping}} (vector$<$ int $>$ \&mapping)
+\begin{DoxyCompactList}\small\item\em Set the mapping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classBallot}{Ballot}} class to hold an individual ballot found in a Instant Runoff election. Each IR \mbox{\hyperlink{classCandidate}{Candidate}} will hold a list of this \mbox{\hyperlink{classBallot}{Ballot}}. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBallot_a933603c6255f0960f86b5bf9ead8602c}\label{classBallot_a933603c6255f0960f86b5bf9ead8602c}} 
+\index{Ballot@{Ballot}!Ballot@{Ballot}}
+\index{Ballot@{Ballot}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{Ballot()}{Ballot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ballot\+::\+Ballot (\begin{DoxyParamCaption}\item[{int}]{rank,  }\item[{vector$<$ int $>$}]{mapping }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBallot}{Ballot}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank} & int the current preference (rank). \\
+\hline
+{\em mapping} & vector$<$int$>$ the mapping of preferences to candidates. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBallot_af9078126260b3f58ea91f6b82797396b}\label{classBallot_af9078126260b3f58ea91f6b82797396b}} 
+\index{Ballot@{Ballot}!Ballot@{Ballot}}
+\index{Ballot@{Ballot}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{Ballot()}{Ballot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ballot\+::\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBallot}{Ballot}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBallot_aafc277ac557785d21a1c0f96fad4e50e}\label{classBallot_aafc277ac557785d21a1c0f96fad4e50e}} 
+\index{Ballot@{Ballot}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily int Ballot\+::get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the index of ranking in the map. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBallot_a797a0c2dd5e49e1c28dacf485e9c4eac}\label{classBallot_a797a0c2dd5e49e1c28dacf485e9c4eac}} 
+\index{Ballot@{Ballot}!getMapping@{getMapping}}
+\index{getMapping@{getMapping}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{getMapping()}{getMapping()}}
+{\footnotesize\ttfamily vector$<$int$>$ Ballot\+::get\+Mapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the mapping. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBallot_a707cc9b0eb60b8013e094fe4a5095aed}\label{classBallot_a707cc9b0eb60b8013e094fe4a5095aed}} 
+\index{Ballot@{Ballot}!getRank@{getRank}}
+\index{getRank@{getRank}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{getRank()}{getRank()}}
+{\footnotesize\ttfamily int Ballot\+::get\+Rank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the ranking. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBallot_ae13a834bcfd39ba48fb0ab6c08c54a89}\label{classBallot_ae13a834bcfd39ba48fb0ab6c08c54a89}} 
+\index{Ballot@{Ballot}!setMapping@{setMapping}}
+\index{setMapping@{setMapping}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{setMapping()}{setMapping()}}
+{\footnotesize\ttfamily void Ballot\+::set\+Mapping (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{mapping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the mapping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapping} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBallot_a9da8c48cf668e17f61c5e99ca6f9eeea}\label{classBallot_a9da8c48cf668e17f61c5e99ca6f9eeea}} 
+\index{Ballot@{Ballot}!setRank@{setRank}}
+\index{setRank@{setRank}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{setRank()}{setRank()}}
+{\footnotesize\ttfamily void Ballot\+::set\+Rank (\begin{DoxyParamCaption}\item[{int}]{rank\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the ranking. Error checks if the ranking goes below 0 and if the ranking is beyond the size of the mapping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{Ballot_8h}{Ballot.\+h}}\item 
+src/Ballot.\+cpp\end{DoxyCompactItemize}

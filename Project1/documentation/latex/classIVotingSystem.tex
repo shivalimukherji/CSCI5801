@@ -1,0 +1,267 @@
+\hypertarget{classIVotingSystem}{}\doxysection{I\+Voting\+System Class Reference}
+\label{classIVotingSystem}\index{IVotingSystem@{IVotingSystem}}
+
+
+The abstract class for each voting election system will inherit from.  
+
+
+
+
+{\ttfamily \#include $<$I\+Voting\+System.\+h$>$}
+
+
+
+Inheritance diagram for I\+Voting\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIVotingSystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+Voting\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classIVotingSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classIVotingSystem_a227a27e5ac833432513929470424f92d}{start\+Election}} ()=0
+\begin{DoxyCompactList}\small\item\em To start the election process and handle special cases. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIVotingSystem_a85ddb547cc9eed2b18e9a4dc7f20896d}{conduct\+Election}} ()=0
+\begin{DoxyCompactList}\small\item\em A helper function to start\+Election. Is used to determine a winner. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAuditFile}{Audit\+File}} $\ast$ \mbox{\hyperlink{classIVotingSystem_afa5f2774b4b3d95854fb0928876cfc08}{get\+Audit\+File}} () const
+\begin{DoxyCompactList}\small\item\em Get the Audit File object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIVotingSystem_a0c33d97647f0317da39dda460c2c249e}{set\+Audit\+File}} (\mbox{\hyperlink{classAuditFile}{Audit\+File}} $\ast$audit\+File\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the Audit File object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDisplay}{Display}} $\ast$ \mbox{\hyperlink{classIVotingSystem_ac561571f791681ecaf4cba47627c4b91}{get\+Display\+Screen}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classDisplay}{Display}} Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIVotingSystem_aa435d1f1cd638d5a19c388e8d0575744}{set\+Display\+Screen}} (\mbox{\hyperlink{classDisplay}{Display}} $\ast$display\+Screen\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classDisplay}{Display}} Screen object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIVotingSystem_a285aab07dba867d96064ad6bff90a50b}{get\+Status}} () const
+\begin{DoxyCompactList}\small\item\em get the status of the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIVotingSystem_a12bf839712d230dd131e781d677b54e1}{set\+Status}} (int status\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the status of the election. 1 if complete. -\/1 if incomplete. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIVotingSystem_add1c62b57982ea218df221978c5120f8}{get\+Auditing}} () const
+\begin{DoxyCompactList}\small\item\em Get the write to audit option int. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIVotingSystem_a825c180e20457a9a1b7a3554367f948a}{set\+Auditing}} ()
+\begin{DoxyCompactList}\small\item\em Set the write to audit option int. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classISpecialCase}{I\+Special\+Case}} $\ast$ $>$ \mbox{\hyperlink{classIVotingSystem_a11198e7cf69f755b8adfe3c70bdeff2e}{get\+Special\+Case}} () const
+\begin{DoxyCompactList}\small\item\em Get the Special Cases vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIVotingSystem_afefd2046289752274e7b6e37d7d95cd6}{set\+Special\+Case}} (const vector$<$ \mbox{\hyperlink{classISpecialCase}{I\+Special\+Case}} $\ast$ $>$ \&special\+Case\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the Special Cases vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIVotingSystem_a5ea5d1e1f77431bd493d126a6cd59bb7}\label{classIVotingSystem_a5ea5d1e1f77431bd493d126a6cd59bb7}} 
+vector$<$ \mbox{\hyperlink{classISpecialCase}{I\+Special\+Case}} $\ast$ $>$ \mbox{\hyperlink{classIVotingSystem_a5ea5d1e1f77431bd493d126a6cd59bb7}{special\+Case}}
+\begin{DoxyCompactList}\small\item\em Hold the methods of special cases handler. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIVotingSystem_a292edb6d34442eee96bbbdd1801385f5}\label{classIVotingSystem_a292edb6d34442eee96bbbdd1801385f5}} 
+\mbox{\hyperlink{classAuditFile}{Audit\+File}} $\ast$ \mbox{\hyperlink{classIVotingSystem_a292edb6d34442eee96bbbdd1801385f5}{audit}}
+\begin{DoxyCompactList}\small\item\em the audit file that will be produced \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIVotingSystem_a560fa83f6cf5e7a3648e4154b775688c}\label{classIVotingSystem_a560fa83f6cf5e7a3648e4154b775688c}} 
+\mbox{\hyperlink{classDisplay}{Display}} $\ast$ \mbox{\hyperlink{classIVotingSystem_a560fa83f6cf5e7a3648e4154b775688c}{display\+Screen}}
+\begin{DoxyCompactList}\small\item\em the display object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIVotingSystem_ac48bdeff42aab4f6cce39b3a16420bbb}\label{classIVotingSystem_ac48bdeff42aab4f6cce39b3a16420bbb}} 
+int \mbox{\hyperlink{classIVotingSystem_ac48bdeff42aab4f6cce39b3a16420bbb}{status}} = -\/1
+\begin{DoxyCompactList}\small\item\em 1 if election is complete and winner is found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIVotingSystem_aee54a9e60baf01ab646bbfd9529d7952}\label{classIVotingSystem_aee54a9e60baf01ab646bbfd9529d7952}} 
+int \mbox{\hyperlink{classIVotingSystem_aee54a9e60baf01ab646bbfd9529d7952}{auditing}} = 0
+\begin{DoxyCompactList}\small\item\em 1(true) if should write to audit. 0(False) to avoid audit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The abstract class for each voting election system will inherit from. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIVotingSystem_a85ddb547cc9eed2b18e9a4dc7f20896d}\label{classIVotingSystem_a85ddb547cc9eed2b18e9a4dc7f20896d}} 
+\index{IVotingSystem@{IVotingSystem}!conductElection@{conductElection}}
+\index{conductElection@{conductElection}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{conductElection()}{conductElection()}}
+{\footnotesize\ttfamily virtual bool I\+Voting\+System\+::conduct\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A helper function to start\+Election. Is used to determine a winner. 
+
+\begin{DoxyReturn}{Returns}
+true if winner was found. 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPoVoteSystem_a5c49e2ee470ddec04d773c333059f728}{Po\+Vote\+System}}, \mbox{\hyperlink{classIRVoteSystem_ace4b10babe3a192486498494a0aba6ca}{I\+R\+Vote\+System}}, and \mbox{\hyperlink{classCPLVoteSystem_a233e5ce1322f82dfcb5573e16c44791a}{C\+P\+L\+Vote\+System}}.
+
+\mbox{\Hypertarget{classIVotingSystem_afa5f2774b4b3d95854fb0928876cfc08}\label{classIVotingSystem_afa5f2774b4b3d95854fb0928876cfc08}} 
+\index{IVotingSystem@{IVotingSystem}!getAuditFile@{getAuditFile}}
+\index{getAuditFile@{getAuditFile}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{getAuditFile()}{getAuditFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAuditFile}{Audit\+File}}$\ast$ I\+Voting\+System\+::get\+Audit\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Audit File object. 
+
+\begin{DoxyReturn}{Returns}
+Audit\+File$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIVotingSystem_add1c62b57982ea218df221978c5120f8}\label{classIVotingSystem_add1c62b57982ea218df221978c5120f8}} 
+\index{IVotingSystem@{IVotingSystem}!getAuditing@{getAuditing}}
+\index{getAuditing@{getAuditing}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{getAuditing()}{getAuditing()}}
+{\footnotesize\ttfamily int I\+Voting\+System\+::get\+Auditing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the write to audit option int. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIVotingSystem_ac561571f791681ecaf4cba47627c4b91}\label{classIVotingSystem_ac561571f791681ecaf4cba47627c4b91}} 
+\index{IVotingSystem@{IVotingSystem}!getDisplayScreen@{getDisplayScreen}}
+\index{getDisplayScreen@{getDisplayScreen}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{getDisplayScreen()}{getDisplayScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDisplay}{Display}}$\ast$ I\+Voting\+System\+::get\+Display\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \mbox{\hyperlink{classDisplay}{Display}} Screen object. 
+
+\begin{DoxyReturn}{Returns}
+Display$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIVotingSystem_a11198e7cf69f755b8adfe3c70bdeff2e}\label{classIVotingSystem_a11198e7cf69f755b8adfe3c70bdeff2e}} 
+\index{IVotingSystem@{IVotingSystem}!getSpecialCase@{getSpecialCase}}
+\index{getSpecialCase@{getSpecialCase}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{getSpecialCase()}{getSpecialCase()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classISpecialCase}{I\+Special\+Case}}$\ast$$>$ I\+Voting\+System\+::get\+Special\+Case (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Special Cases vector. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+I\+Special\+Case$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIVotingSystem_a285aab07dba867d96064ad6bff90a50b}\label{classIVotingSystem_a285aab07dba867d96064ad6bff90a50b}} 
+\index{IVotingSystem@{IVotingSystem}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily int I\+Voting\+System\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the status of the election. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIVotingSystem_a0c33d97647f0317da39dda460c2c249e}\label{classIVotingSystem_a0c33d97647f0317da39dda460c2c249e}} 
+\index{IVotingSystem@{IVotingSystem}!setAuditFile@{setAuditFile}}
+\index{setAuditFile@{setAuditFile}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{setAuditFile()}{setAuditFile()}}
+{\footnotesize\ttfamily void I\+Voting\+System\+::set\+Audit\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAuditFile}{Audit\+File}} $\ast$}]{audit\+File\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Audit File object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audit\+File\+\_\+} & \mbox{\hyperlink{classAuditFile}{Audit\+File}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIVotingSystem_a825c180e20457a9a1b7a3554367f948a}\label{classIVotingSystem_a825c180e20457a9a1b7a3554367f948a}} 
+\index{IVotingSystem@{IVotingSystem}!setAuditing@{setAuditing}}
+\index{setAuditing@{setAuditing}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{setAuditing()}{setAuditing()}}
+{\footnotesize\ttfamily void I\+Voting\+System\+::set\+Auditing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the write to audit option int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em auditing\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIVotingSystem_aa435d1f1cd638d5a19c388e8d0575744}\label{classIVotingSystem_aa435d1f1cd638d5a19c388e8d0575744}} 
+\index{IVotingSystem@{IVotingSystem}!setDisplayScreen@{setDisplayScreen}}
+\index{setDisplayScreen@{setDisplayScreen}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{setDisplayScreen()}{setDisplayScreen()}}
+{\footnotesize\ttfamily void I\+Voting\+System\+::set\+Display\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDisplay}{Display}} $\ast$}]{display\+Screen\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the \mbox{\hyperlink{classDisplay}{Display}} Screen object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Screen\+\_\+} & \mbox{\hyperlink{classDisplay}{Display}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIVotingSystem_afefd2046289752274e7b6e37d7d95cd6}\label{classIVotingSystem_afefd2046289752274e7b6e37d7d95cd6}} 
+\index{IVotingSystem@{IVotingSystem}!setSpecialCase@{setSpecialCase}}
+\index{setSpecialCase@{setSpecialCase}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{setSpecialCase()}{setSpecialCase()}}
+{\footnotesize\ttfamily void I\+Voting\+System\+::set\+Special\+Case (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classISpecialCase}{I\+Special\+Case}} $\ast$ $>$ \&}]{special\+Case\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Special Cases vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em special\+Case\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIVotingSystem_a12bf839712d230dd131e781d677b54e1}\label{classIVotingSystem_a12bf839712d230dd131e781d677b54e1}} 
+\index{IVotingSystem@{IVotingSystem}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily void I\+Voting\+System\+::set\+Status (\begin{DoxyParamCaption}\item[{int}]{status\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the status of the election. 1 if complete. -\/1 if incomplete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIVotingSystem_a227a27e5ac833432513929470424f92d}\label{classIVotingSystem_a227a27e5ac833432513929470424f92d}} 
+\index{IVotingSystem@{IVotingSystem}!startElection@{startElection}}
+\index{startElection@{startElection}!IVotingSystem@{IVotingSystem}}
+\doxysubsubsection{\texorpdfstring{startElection()}{startElection()}}
+{\footnotesize\ttfamily virtual bool I\+Voting\+System\+::start\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+To start the election process and handle special cases. 
+
+\begin{DoxyReturn}{Returns}
+true if sucessful. 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPoVoteSystem_a7230127b81095736613f4cffec93d487}{Po\+Vote\+System}}, \mbox{\hyperlink{classIRVoteSystem_a152815ad6b66d5cff349394dbe1b0819}{I\+R\+Vote\+System}}, and \mbox{\hyperlink{classCPLVoteSystem_a791a6dbdb7b919ed2a30f40276c7cd4b}{C\+P\+L\+Vote\+System}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{IVotingSystem_8h}{I\+Voting\+System.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{classPoBallot}{}\doxysection{Po\+Ballot Class Reference}
+\label{classPoBallot}\index{PoBallot@{PoBallot}}
+
+
+An output class from the Po Processing class. This class holds objects/information for the Po Vote System to condut its election and determine who\textquotesingle{}s the winner.  
+
+
+
+
+{\ttfamily \#include $<$Po\+Ballot.\+h$>$}
+
+
+
+Inheritance diagram for Po\+Ballot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPoBallot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Po\+Ballot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPoBallot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoBallot_a4f471dc0db8e250a50ea61647dc71faf}{Po\+Ballot}} (std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ candidates, std\+::vector$<$ int $>$ \mbox{\hyperlink{classIVoteBallot_a179b08084c7219a34400b413225e4adf}{map\+Ballot}}, std\+::vector$<$ double $>$ map\+Percentage)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPoBallot}{Po\+Ballot}} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \mbox{\hyperlink{classPoBallot_a8d1f0aa4847afcadb470c0bd2a8b219e}{get\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of Candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoBallot_a577e06a8b7e1b6d2e02e1ecef1b4dd13}{set\+Candidates}} (const std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \&candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the list of Candidates. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classPoBallot_a5a1b2b3ce2b6e4105f70651ace27613a}{get\+Map\+Percentage}} () const
+\begin{DoxyCompactList}\small\item\em Get the Percentage mapping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoBallot_aad05db29174726e8137b85063154bca2}{set\+Map\+Percentage}} (const std\+::vector$<$ double $>$ \&map\+Percentage\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the Percentage mapping. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoBallot_acf84950f5473dce3d38503a28207a183}{get\+Num\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoBallot_a4ea56ed6d8134e6dbc2cd1632388446c}{set\+Num\+Candidates}} (int num\+Candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the number of candidates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An output class from the Po Processing class. This class holds objects/information for the Po Vote System to condut its election and determine who\textquotesingle{}s the winner. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoBallot_a4f471dc0db8e250a50ea61647dc71faf}\label{classPoBallot_a4f471dc0db8e250a50ea61647dc71faf}} 
+\index{PoBallot@{PoBallot}!PoBallot@{PoBallot}}
+\index{PoBallot@{PoBallot}!PoBallot@{PoBallot}}
+\doxysubsubsection{\texorpdfstring{PoBallot()}{PoBallot()}}
+{\footnotesize\ttfamily Po\+Ballot\+::\+Po\+Ballot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$}]{candidates,  }\item[{std\+::vector$<$ int $>$}]{map\+Ballot,  }\item[{std\+::vector$<$ double $>$}]{map\+Percentage }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPoBallot}{Po\+Ballot}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate} & vector$<$\+Candidate$\ast$$>$ holds all the candidates \\
+\hline
+{\em map\+Ballot} & vector$<$int$>$ maps the amount of ballot each candidate has \\
+\hline
+{\em map\+Percentage} & vector$<$double$>$ maps the percentage each candidate has overall \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoBallot_a8d1f0aa4847afcadb470c0bd2a8b219e}\label{classPoBallot_a8d1f0aa4847afcadb470c0bd2a8b219e}} 
+\index{PoBallot@{PoBallot}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!PoBallot@{PoBallot}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCandidate}{Candidate}}$\ast$$>$ Po\+Ballot\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of Candidates. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Po\+Candidate$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoBallot_a5a1b2b3ce2b6e4105f70651ace27613a}\label{classPoBallot_a5a1b2b3ce2b6e4105f70651ace27613a}} 
+\index{PoBallot@{PoBallot}!getMapPercentage@{getMapPercentage}}
+\index{getMapPercentage@{getMapPercentage}!PoBallot@{PoBallot}}
+\doxysubsubsection{\texorpdfstring{getMapPercentage()}{getMapPercentage()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Po\+Ballot\+::get\+Map\+Percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Percentage mapping. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$double$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoBallot_acf84950f5473dce3d38503a28207a183}\label{classPoBallot_acf84950f5473dce3d38503a28207a183}} 
+\index{PoBallot@{PoBallot}!getNumCandidates@{getNumCandidates}}
+\index{getNumCandidates@{getNumCandidates}!PoBallot@{PoBallot}}
+\doxysubsubsection{\texorpdfstring{getNumCandidates()}{getNumCandidates()}}
+{\footnotesize\ttfamily int Po\+Ballot\+::get\+Num\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of candidates. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoBallot_a577e06a8b7e1b6d2e02e1ecef1b4dd13}\label{classPoBallot_a577e06a8b7e1b6d2e02e1ecef1b4dd13}} 
+\index{PoBallot@{PoBallot}!setCandidates@{setCandidates}}
+\index{setCandidates@{setCandidates}!PoBallot@{PoBallot}}
+\doxysubsubsection{\texorpdfstring{setCandidates()}{setCandidates()}}
+{\footnotesize\ttfamily void Po\+Ballot\+::set\+Candidates (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \&}]{candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of Candidates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates\+\_\+} & vector$<$\+Po\+Candidate$\ast$$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoBallot_aad05db29174726e8137b85063154bca2}\label{classPoBallot_aad05db29174726e8137b85063154bca2}} 
+\index{PoBallot@{PoBallot}!setMapPercentage@{setMapPercentage}}
+\index{setMapPercentage@{setMapPercentage}!PoBallot@{PoBallot}}
+\doxysubsubsection{\texorpdfstring{setMapPercentage()}{setMapPercentage()}}
+{\footnotesize\ttfamily void Po\+Ballot\+::set\+Map\+Percentage (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{map\+Percentage\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Percentage mapping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Percentage\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoBallot_a4ea56ed6d8134e6dbc2cd1632388446c}\label{classPoBallot_a4ea56ed6d8134e6dbc2cd1632388446c}} 
+\index{PoBallot@{PoBallot}!setNumCandidates@{setNumCandidates}}
+\index{setNumCandidates@{setNumCandidates}!PoBallot@{PoBallot}}
+\doxysubsubsection{\texorpdfstring{setNumCandidates()}{setNumCandidates()}}
+{\footnotesize\ttfamily void Po\+Ballot\+::set\+Num\+Candidates (\begin{DoxyParamCaption}\item[{int}]{num\+Candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the number of candidates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Candidates\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{PoBallot_8h}{Po\+Ballot.\+h}}\item 
+src/Po\+Ballot.\+cpp\end{DoxyCompactItemize}

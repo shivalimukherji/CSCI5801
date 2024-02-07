@@ -1,0 +1,112 @@
+\hypertarget{classIVoteBallot}{}\doxysection{I\+Vote\+Ballot Class Reference}
+\label{classIVoteBallot}\index{IVoteBallot@{IVoteBallot}}
+
+
+The abstract class where all Vote\+Ballots are inherited from.  
+
+
+
+
+{\ttfamily \#include $<$I\+Vote\+Ballot.\+h$>$}
+
+
+
+Inheritance diagram for I\+Vote\+Ballot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classIVoteBallot__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classIVoteBallot_a35544e884524f2e6fa240b086fcff504}{get\+Map\+Ballot}} () const
+\begin{DoxyCompactList}\small\item\em get the mapping of ballots to $<$candidates / parties / ...$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIVoteBallot_a1f1ac44c03e5ed8ea1fca21349e4c7cd}{set\+Map\+Ballot}} (const std\+::vector$<$ int $>$ \&map\+Ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the mapping of ballots to $<$candidates / parties / ...$>$ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIVoteBallot_a65c0fe81c5cee5edbe0fdb8436936da8}{get\+Total\+Ballot}} () const
+\begin{DoxyCompactList}\small\item\em Get the total amount of ballots. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIVoteBallot_a21d05acea279bd8d1521c5e845ce5d88}{set\+Total\+Ballot}} (int total\+Ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the total amount of ballots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIVoteBallot_a179b08084c7219a34400b413225e4adf}\label{classIVoteBallot_a179b08084c7219a34400b413225e4adf}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classIVoteBallot_a179b08084c7219a34400b413225e4adf}{map\+Ballot}}
+\begin{DoxyCompactList}\small\item\em Holds the mapping of ballots. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIVoteBallot_a6c71a77018af3d4ae62d2ae9a504aabb}\label{classIVoteBallot_a6c71a77018af3d4ae62d2ae9a504aabb}} 
+int \mbox{\hyperlink{classIVoteBallot_a6c71a77018af3d4ae62d2ae9a504aabb}{total\+Ballot}}
+\begin{DoxyCompactList}\small\item\em total amount of ballots \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The abstract class where all Vote\+Ballots are inherited from. 
+
+Vote\+Ballots contains all necessarily information and is produced by a \mbox{\hyperlink{classBallot}{Ballot}} Processing class.
+
+Vote\+Ballots are used in its pertaining Vote Election to conduct an election 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIVoteBallot_a35544e884524f2e6fa240b086fcff504}\label{classIVoteBallot_a35544e884524f2e6fa240b086fcff504}} 
+\index{IVoteBallot@{IVoteBallot}!getMapBallot@{getMapBallot}}
+\index{getMapBallot@{getMapBallot}!IVoteBallot@{IVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getMapBallot()}{getMapBallot()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ I\+Vote\+Ballot\+::get\+Map\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the mapping of ballots to $<$candidates / parties / ...$>$ 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIVoteBallot_a65c0fe81c5cee5edbe0fdb8436936da8}\label{classIVoteBallot_a65c0fe81c5cee5edbe0fdb8436936da8}} 
+\index{IVoteBallot@{IVoteBallot}!getTotalBallot@{getTotalBallot}}
+\index{getTotalBallot@{getTotalBallot}!IVoteBallot@{IVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getTotalBallot()}{getTotalBallot()}}
+{\footnotesize\ttfamily int I\+Vote\+Ballot\+::get\+Total\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the total amount of ballots. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIVoteBallot_a1f1ac44c03e5ed8ea1fca21349e4c7cd}\label{classIVoteBallot_a1f1ac44c03e5ed8ea1fca21349e4c7cd}} 
+\index{IVoteBallot@{IVoteBallot}!setMapBallot@{setMapBallot}}
+\index{setMapBallot@{setMapBallot}!IVoteBallot@{IVoteBallot}}
+\doxysubsubsection{\texorpdfstring{setMapBallot()}{setMapBallot()}}
+{\footnotesize\ttfamily void I\+Vote\+Ballot\+::set\+Map\+Ballot (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{map\+Ballot\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the mapping of ballots to $<$candidates / parties / ...$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Ballot\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIVoteBallot_a21d05acea279bd8d1521c5e845ce5d88}\label{classIVoteBallot_a21d05acea279bd8d1521c5e845ce5d88}} 
+\index{IVoteBallot@{IVoteBallot}!setTotalBallot@{setTotalBallot}}
+\index{setTotalBallot@{setTotalBallot}!IVoteBallot@{IVoteBallot}}
+\doxysubsubsection{\texorpdfstring{setTotalBallot()}{setTotalBallot()}}
+{\footnotesize\ttfamily void I\+Vote\+Ballot\+::set\+Total\+Ballot (\begin{DoxyParamCaption}\item[{int}]{total\+Ballot\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the total amount of ballots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Ballot\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{IVoteBallot_8h}{I\+Vote\+Ballot.\+h}}\end{DoxyCompactItemize}

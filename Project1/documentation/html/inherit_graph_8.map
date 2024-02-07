@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIVotingSystem.html" title="The abstract class for each voting election system will inherit from." alt="" coords="5,56,123,83"/>
+<area shape="rect" id="node2" href="$classCPLVoteSystem.html" title=" " alt="" coords="171,5,295,32"/>
+<area shape="rect" id="node3" href="$classIRVoteSystem.html" title="The voting system to conduct the election and determine a winning candidate." alt="" coords="176,56,289,83"/>
+<area shape="rect" id="node4" href="$classPoVoteSystem.html" title="The voting system to conduct the election and determine a winning candidate." alt="" coords="174,107,291,133"/>
+</map>

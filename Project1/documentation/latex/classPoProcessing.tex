@@ -1,0 +1,361 @@
+\hypertarget{classPoProcessing}{}\doxysection{Po\+Processing Class Reference}
+\label{classPoProcessing}\index{PoProcessing@{PoProcessing}}
+
+
+PO Processing is to process all ballots in a .csv file and prepare an organized set of information to send to the \mbox{\hyperlink{classPoVoteSystem}{Po\+Vote\+System}} class, conducting and determining the winner.  
+
+
+
+
+{\ttfamily \#include $<$Po\+Processing.\+h$>$}
+
+
+
+Inheritance diagram for Po\+Processing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classPoProcessing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Po\+Processing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classPoProcessing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoProcessing_a7d89c20d126a03db45fc94a4e034e56b}{Po\+Processing}} (F\+I\+LE $\ast$file\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPoProcessing}{Po\+Processing}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoProcessing_aec8e085bc8a9817c138231158064cfa0}{Po\+Processing}} (F\+I\+LE $\ast$file\+\_\+, std\+::vector$<$ std\+::string $>$ files\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPoProcessing}{Po\+Processing}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoProcessing_a0e80539651f11181793ae8d90337d4a6}{Po\+Processing}} (\mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPoProcessing}{Po\+Processing}} object given the \mbox{\hyperlink{classPoBallot}{Po\+Ballot}} (A class containing the organized information to send to vote election). \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{classPoProcessing_a4a616aec82877ca89c6ae5e5a665d01e}{next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Helper function to read the next line and return the contente seperated by \textquotesingle{},\textquotesingle{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoProcessing_afface78502a73a0f9d5d90c44cf13b57}{set\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Overall function to control reading the header informations of multiple files and redistributing approriate ballots. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoProcessing_a8f75245e56448d8731cd7a12aec6ead0}{read\+Header}} (int multiple)
+\begin{DoxyCompactList}\small\item\em Function to read the header parts of the .csv file and fill out the necessarily information. Does not read the ballots in the .csv file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoProcessing_a404c79462befc29c5be712a64b23bbf1}{read}} ()
+\begin{DoxyCompactList}\small\item\em Function to read all the ballots in the .csv and distribute to each candidate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$ \mbox{\hyperlink{classPoProcessing_a163da8b0af5814e70c4746f12f940f2e}{output}} ()
+\begin{DoxyCompactList}\small\item\em Create an object holding required information for the voting election in order to conduct. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoProcessing_a29c4de2610e95aec4ceb7eb79e018b7b}\label{classPoProcessing_a29c4de2610e95aec4ceb7eb79e018b7b}} 
+void \mbox{\hyperlink{classPoProcessing_a29c4de2610e95aec4ceb7eb79e018b7b}{calculate}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the map percentage. Each candidate\textquotesingle{}s number of ballots is divided by the total ballots found in the .csv file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoProcessing_a8846f5134574a7b9cdb1b675e15feeca}{get\+Num\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of candidates left in election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoProcessing_a358c324e4097f291d0a3775a3e59ddbb}{set\+Num\+Candidates}} (int num\+Candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the number of candidates left in election. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPoProcessing_acdc92dca14e4b6f889f63e93e653312e}{get\+Num\+Ballots}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of ballots for each candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoProcessing_a21b88a2f215c5e58fbc36817dd520dd1}{set\+Num\+Ballots}} (int num\+Ballots\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the number of ballots for each candidate. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \mbox{\hyperlink{classPoProcessing_a8e3224cc76073a73a81b6ec0d4a18025}{get\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of Candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoProcessing_a734df014bcdd785f988afccbc87c33bb}{set\+Candidates}} (const std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \&candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the list of Candidates. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classPoProcessing_af8fedb1d1eb2a8deb9c9264850209986}{get\+Map\+Percentage}} () const
+\begin{DoxyCompactList}\small\item\em Get the mapping of percentage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoProcessing_a78c64ef0083b587395cac1499d7ecf7e}{set\+Map\+Percentage}} (const std\+::vector$<$ double $>$ \&map\+Percentage\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the percentage mapping. \end{DoxyCompactList}\item 
+std\+::vector$<$ string $>$ \mbox{\hyperlink{classPoProcessing_aa7eacade8a65d2d04102a746e1815b53}{get\+Files}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of inputted files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoProcessing_a8acbe31ea0ea3b158c2beda3b3ab8412}{set\+Files}} (const std\+::vector$<$ string $>$ \&files\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the list of inputted files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+PO Processing is to process all ballots in a .csv file and prepare an organized set of information to send to the \mbox{\hyperlink{classPoVoteSystem}{Po\+Vote\+System}} class, conducting and determining the winner. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoProcessing_a7d89c20d126a03db45fc94a4e034e56b}\label{classPoProcessing_a7d89c20d126a03db45fc94a4e034e56b}} 
+\index{PoProcessing@{PoProcessing}!PoProcessing@{PoProcessing}}
+\index{PoProcessing@{PoProcessing}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{PoProcessing()}{PoProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Po\+Processing\+::\+Po\+Processing (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classPoProcessing}{Po\+Processing}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & F\+I\+LE (the .csv file) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoProcessing_aec8e085bc8a9817c138231158064cfa0}\label{classPoProcessing_aec8e085bc8a9817c138231158064cfa0}} 
+\index{PoProcessing@{PoProcessing}!PoProcessing@{PoProcessing}}
+\index{PoProcessing@{PoProcessing}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{PoProcessing()}{PoProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Po\+Processing\+::\+Po\+Processing (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file\+\_\+,  }\item[{std\+::vector$<$ std\+::string $>$}]{files\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classPoProcessing}{Po\+Processing}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+} & The F\+I\+LE object (the first one) \\
+\hline
+{\em files\+\_\+} & List of all the files inputted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoProcessing_a0e80539651f11181793ae8d90337d4a6}\label{classPoProcessing_a0e80539651f11181793ae8d90337d4a6}} 
+\index{PoProcessing@{PoProcessing}!PoProcessing@{PoProcessing}}
+\index{PoProcessing@{PoProcessing}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{PoProcessing()}{PoProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Po\+Processing\+::\+Po\+Processing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$}]{ballot\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classPoProcessing}{Po\+Processing}} object given the \mbox{\hyperlink{classPoBallot}{Po\+Ballot}} (A class containing the organized information to send to vote election). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot} & Po\+Ballot$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoProcessing_a8e3224cc76073a73a81b6ec0d4a18025}\label{classPoProcessing_a8e3224cc76073a73a81b6ec0d4a18025}} 
+\index{PoProcessing@{PoProcessing}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCandidate}{Candidate}}$\ast$$>$ Po\+Processing\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of Candidates. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Candidate$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoProcessing_aa7eacade8a65d2d04102a746e1815b53}\label{classPoProcessing_aa7eacade8a65d2d04102a746e1815b53}} 
+\index{PoProcessing@{PoProcessing}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$string$>$ Po\+Processing\+::get\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of inputted files. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$string$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoProcessing_af8fedb1d1eb2a8deb9c9264850209986}\label{classPoProcessing_af8fedb1d1eb2a8deb9c9264850209986}} 
+\index{PoProcessing@{PoProcessing}!getMapPercentage@{getMapPercentage}}
+\index{getMapPercentage@{getMapPercentage}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{getMapPercentage()}{getMapPercentage()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Po\+Processing\+::get\+Map\+Percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the mapping of percentage. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$double$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoProcessing_acdc92dca14e4b6f889f63e93e653312e}\label{classPoProcessing_acdc92dca14e4b6f889f63e93e653312e}} 
+\index{PoProcessing@{PoProcessing}!getNumBallots@{getNumBallots}}
+\index{getNumBallots@{getNumBallots}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{getNumBallots()}{getNumBallots()}}
+{\footnotesize\ttfamily int Po\+Processing\+::get\+Num\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of ballots for each candidate. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoProcessing_a8846f5134574a7b9cdb1b675e15feeca}\label{classPoProcessing_a8846f5134574a7b9cdb1b675e15feeca}} 
+\index{PoProcessing@{PoProcessing}!getNumCandidates@{getNumCandidates}}
+\index{getNumCandidates@{getNumCandidates}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{getNumCandidates()}{getNumCandidates()}}
+{\footnotesize\ttfamily int Po\+Processing\+::get\+Num\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of candidates left in election. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoProcessing_a4a616aec82877ca89c6ae5e5a665d01e}\label{classPoProcessing_a4a616aec82877ca89c6ae5e5a665d01e}} 
+\index{PoProcessing@{PoProcessing}!nextLine@{nextLine}}
+\index{nextLine@{nextLine}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{nextLine()}{nextLine()}}
+{\footnotesize\ttfamily char $\ast$ Po\+Processing\+::next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Helper function to read the next line and return the contente seperated by \textquotesingle{},\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+char$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoProcessing_a163da8b0af5814e70c4746f12f940f2e}\label{classPoProcessing_a163da8b0af5814e70c4746f12f940f2e}} 
+\index{PoProcessing@{PoProcessing}!output@{output}}
+\index{output@{output}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$ Po\+Processing\+::output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Create an object holding required information for the voting election in order to conduct. 
+
+\begin{DoxyReturn}{Returns}
+I\+R\+Ballot$\ast$ the class containing information. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a339b858b8031e167da82adab2a59024f}{I\+Ballot\+Processing}}.
+
+\mbox{\Hypertarget{classPoProcessing_a404c79462befc29c5be712a64b23bbf1}\label{classPoProcessing_a404c79462befc29c5be712a64b23bbf1}} 
+\index{PoProcessing@{PoProcessing}!read@{read}}
+\index{read@{read}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily bool Po\+Processing\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function to read all the ballots in the .csv and distribute to each candidate. 
+
+\begin{DoxyReturn}{Returns}
+true if the reading was sucessful 
+
+false if the reading failed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a7a453ce6dcb22bc4fac5838b10fac1d9}{I\+Ballot\+Processing}}.
+
+\mbox{\Hypertarget{classPoProcessing_a8f75245e56448d8731cd7a12aec6ead0}\label{classPoProcessing_a8f75245e56448d8731cd7a12aec6ead0}} 
+\index{PoProcessing@{PoProcessing}!readHeader@{readHeader}}
+\index{readHeader@{readHeader}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{readHeader()}{readHeader()}}
+{\footnotesize\ttfamily bool Po\+Processing\+::read\+Header (\begin{DoxyParamCaption}\item[{int}]{multiple }\end{DoxyParamCaption})}
+
+
+
+Function to read the header parts of the .csv file and fill out the necessarily information. Does not read the ballots in the .csv file. 
+
+\begin{DoxyReturn}{Returns}
+true if the set up was suceessful 
+
+false if the set up fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoProcessing_a734df014bcdd785f988afccbc87c33bb}\label{classPoProcessing_a734df014bcdd785f988afccbc87c33bb}} 
+\index{PoProcessing@{PoProcessing}!setCandidates@{setCandidates}}
+\index{setCandidates@{setCandidates}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{setCandidates()}{setCandidates()}}
+{\footnotesize\ttfamily void Po\+Processing\+::set\+Candidates (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \&}]{candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of Candidates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates\+\_\+} & vector$<$\+Candidate$\ast$$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoProcessing_a8acbe31ea0ea3b158c2beda3b3ab8412}\label{classPoProcessing_a8acbe31ea0ea3b158c2beda3b3ab8412}} 
+\index{PoProcessing@{PoProcessing}!setFiles@{setFiles}}
+\index{setFiles@{setFiles}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{setFiles()}{setFiles()}}
+{\footnotesize\ttfamily void Po\+Processing\+::set\+Files (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ string $>$ \&}]{files\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of inputted files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em files\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoProcessing_a78c64ef0083b587395cac1499d7ecf7e}\label{classPoProcessing_a78c64ef0083b587395cac1499d7ecf7e}} 
+\index{PoProcessing@{PoProcessing}!setMapPercentage@{setMapPercentage}}
+\index{setMapPercentage@{setMapPercentage}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{setMapPercentage()}{setMapPercentage()}}
+{\footnotesize\ttfamily void Po\+Processing\+::set\+Map\+Percentage (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{map\+Percentage\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the percentage mapping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Percentage\+\_\+} & vector$<$double$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoProcessing_a21b88a2f215c5e58fbc36817dd520dd1}\label{classPoProcessing_a21b88a2f215c5e58fbc36817dd520dd1}} 
+\index{PoProcessing@{PoProcessing}!setNumBallots@{setNumBallots}}
+\index{setNumBallots@{setNumBallots}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{setNumBallots()}{setNumBallots()}}
+{\footnotesize\ttfamily void Po\+Processing\+::set\+Num\+Ballots (\begin{DoxyParamCaption}\item[{int}]{num\+Ballots\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the number of ballots for each candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Ballots\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoProcessing_a358c324e4097f291d0a3775a3e59ddbb}\label{classPoProcessing_a358c324e4097f291d0a3775a3e59ddbb}} 
+\index{PoProcessing@{PoProcessing}!setNumCandidates@{setNumCandidates}}
+\index{setNumCandidates@{setNumCandidates}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{setNumCandidates()}{setNumCandidates()}}
+{\footnotesize\ttfamily void Po\+Processing\+::set\+Num\+Candidates (\begin{DoxyParamCaption}\item[{int}]{num\+Candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the number of candidates left in election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Candidates\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoProcessing_afface78502a73a0f9d5d90c44cf13b57}\label{classPoProcessing_afface78502a73a0f9d5d90c44cf13b57}} 
+\index{PoProcessing@{PoProcessing}!setUp@{setUp}}
+\index{setUp@{setUp}!PoProcessing@{PoProcessing}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily bool Po\+Processing\+::set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overall function to control reading the header informations of multiple files and redistributing approriate ballots. 
+
+\begin{DoxyReturn}{Returns}
+true if the set up was suceessful 
+
+false if the set up fail 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a3eb01b2f1102ff4e0bdb4b99ab40c45d}{I\+Ballot\+Processing}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{PoProcessing_8h}{Po\+Processing.\+h}}\item 
+src/Po\+Processing.\+cpp\end{DoxyCompactItemize}

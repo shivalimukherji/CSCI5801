@@ -1,0 +1,6 @@
+<map id="IVotingSystem" name="IVotingSystem">
+<area shape="rect" id="node1" title="The abstract class for each voting election system will inherit from." alt="" coords="151,5,269,32"/>
+<area shape="rect" id="node2" href="$classCPLVoteSystem.html" title=" " alt="" coords="5,80,129,107"/>
+<area shape="rect" id="node3" href="$classIRVoteSystem.html" title="The voting system to conduct the election and determine a winning candidate." alt="" coords="153,80,267,107"/>
+<area shape="rect" id="node4" href="$classPoVoteSystem.html" title="The voting system to conduct the election and determine a winning candidate." alt="" coords="291,80,409,107"/>
+</map>

@@ -1,0 +1,135 @@
+\hypertarget{classPopularityCase}{}\doxysection{Popularity\+Case Class Reference}
+\label{classPopularityCase}\index{PopularityCase@{PopularityCase}}
+
+
+A class representing a popularity special case implementation.  
+
+
+
+
+{\ttfamily \#include $<$Popularity\+Case.\+h$>$}
+
+
+
+Inheritance diagram for Popularity\+Case\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classPopularityCase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Popularity\+Case\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classPopularityCase__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPopularityCase_adcf11ed61fd48164f92eb888ba952611}{Popularity\+Case}} (std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$candidates)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPopularityCase}{Popularity\+Case}} object with the given vector of \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} pointers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPopularityCase_a35aab4def42922f9afb108827a42a86a}{run}} ()
+\begin{DoxyCompactList}\small\item\em Run the popularity special case with the current set of candidates. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPopularityCase_a33c70a42d6dcc2edafe1d855a86e9f25}{helper}} ()
+\begin{DoxyCompactList}\small\item\em A helper method used internally by the class. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \mbox{\hyperlink{classPopularityCase_a293a7aba353ce5a7d84aab45286298b2}{get\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the current set of candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPopularityCase_ac5c5d5f8ddb906308e21078a2712d227}{set\+Candidates}} (const vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \&candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the current set of candidates to the given vector of \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class representing a popularity special case implementation. 
+
+This class inherits from the \mbox{\hyperlink{classISpecialCase}{I\+Special\+Case}} interface and provides an implementation for the \mbox{\hyperlink{classPopularityCase_a35aab4def42922f9afb108827a42a86a}{run()}} method. It takes a vector of \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} pointers as input and stores it in a private member variable. It also provides a \mbox{\hyperlink{classPopularityCase_a33c70a42d6dcc2edafe1d855a86e9f25}{helper()}} method and getter/setter methods for the candidates member variable. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPopularityCase_adcf11ed61fd48164f92eb888ba952611}\label{classPopularityCase_adcf11ed61fd48164f92eb888ba952611}} 
+\index{PopularityCase@{PopularityCase}!PopularityCase@{PopularityCase}}
+\index{PopularityCase@{PopularityCase}!PopularityCase@{PopularityCase}}
+\doxysubsubsection{\texorpdfstring{PopularityCase()}{PopularityCase()}}
+{\footnotesize\ttfamily Popularity\+Case\+::\+Popularity\+Case (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$}]{candidates }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPopularityCase}{Popularity\+Case}} object with the given vector of \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} pointers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates} & A vector of \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} pointers. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPopularityCase_a293a7aba353ce5a7d84aab45286298b2}\label{classPopularityCase_a293a7aba353ce5a7d84aab45286298b2}} 
+\index{PopularityCase@{PopularityCase}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!PopularityCase@{PopularityCase}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}}$\ast$$>$ Popularity\+Case\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the current set of candidates. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} pointers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPopularityCase_a33c70a42d6dcc2edafe1d855a86e9f25}\label{classPopularityCase_a33c70a42d6dcc2edafe1d855a86e9f25}} 
+\index{PopularityCase@{PopularityCase}!helper@{helper}}
+\index{helper@{helper}!PopularityCase@{PopularityCase}}
+\doxysubsubsection{\texorpdfstring{helper()}{helper()}}
+{\footnotesize\ttfamily int Popularity\+Case\+::helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A helper method used internally by the class. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the result of the helper method. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPopularityCase_a35aab4def42922f9afb108827a42a86a}\label{classPopularityCase_a35aab4def42922f9afb108827a42a86a}} 
+\index{PopularityCase@{PopularityCase}!run@{run}}
+\index{run@{run}!PopularityCase@{PopularityCase}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int Popularity\+Case\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Run the popularity special case with the current set of candidates. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the result of the popularity special case. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classISpecialCase_af85ccf3921abe5a8ae359e9d03e9d90d}{I\+Special\+Case}}.
+
+\mbox{\Hypertarget{classPopularityCase_ac5c5d5f8ddb906308e21078a2712d227}\label{classPopularityCase_ac5c5d5f8ddb906308e21078a2712d227}} 
+\index{PopularityCase@{PopularityCase}!setCandidates@{setCandidates}}
+\index{setCandidates@{setCandidates}!PopularityCase@{PopularityCase}}
+\doxysubsubsection{\texorpdfstring{setCandidates()}{setCandidates()}}
+{\footnotesize\ttfamily void Popularity\+Case\+::set\+Candidates (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \&}]{candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the current set of candidates to the given vector of \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} pointers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates\+\_\+} & A vector of \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} pointers. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{PopularityCase_8h}{Popularity\+Case.\+h}}\item 
+src/Popularity\+Case.\+cpp\end{DoxyCompactItemize}

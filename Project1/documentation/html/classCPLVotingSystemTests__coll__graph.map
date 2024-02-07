@@ -1,0 +1,13 @@
+<map id="CPLVotingSystemTests" name="CPLVotingSystemTests">
+<area shape="rect" id="node1" title=" " alt="" coords="185,285,354,312"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,196,53,223"/>
+<area shape="rect" id="node3" href="$classCPLVoteSystem.html" title=" " alt="" coords="78,196,202,223"/>
+<area shape="rect" id="node4" href="$classIVotingSystem.html" title="The abstract class for each voting election system will inherit from." alt="" coords="81,95,199,121"/>
+<area shape="rect" id="node5" href="$classDisplay.html" title="The Display class represents a display that can be used to output information." alt="" coords="50,5,121,32"/>
+<area shape="rect" id="node6" href="$classAuditFile.html" title="The AuditFile class represents a file that logs information about a voting audit." alt="" coords="227,5,306,32"/>
+<area shape="rect" id="node10" href="$classIBallotProcessing.html" title=" " alt="" coords="311,95,446,121"/>
+<area shape="rect" id="node7" href="$classCPLVoteBallot.html" title=" " alt="" coords="463,145,577,172"/>
+<area shape="rect" id="node8" href="$classIVoteBallot.html" title="The abstract class where all VoteBallots are inherited from." alt="" coords="475,5,570,32"/>
+<area shape="rect" id="node9" href="$classCPLProcessing.html" title=" " alt="" coords="315,196,431,223"/>
+<area shape="rect" id="node11" href="$classTableBuilder.html" title=" " alt="" coords="330,5,433,32"/>
+</map>

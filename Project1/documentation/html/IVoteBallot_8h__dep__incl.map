@@ -1,0 +1,16 @@
+<map id="src/include/IVoteBallot.h" name="src/include/IVoteBallot.h">
+<area shape="rect" id="node1" title=" " alt="" coords="643,5,823,32"/>
+<area shape="rect" id="node2" href="$IBallotProcessing_8h.html" title=" " alt="" coords="730,80,950,107"/>
+<area shape="rect" id="node9" href="$CPLVoteBallot_8h.html" title="CPLVoteBallot saves information of election." alt="" coords="281,80,479,107"/>
+<area shape="rect" id="node13" href="$IRBallot_8h.html" title=" " alt="" coords="547,80,706,107"/>
+<area shape="rect" id="node14" href="$PoBallot_8h.html" title=" " alt="" coords="975,80,1137,107"/>
+<area shape="rect" id="node3" href="$CPLProcessing_8h.html" title="Process CPL ballot file and save the information of parties, candidates and seats." alt="" coords="427,155,629,181"/>
+<area shape="rect" id="node5" href="$IRProcessing_8h.html" title=" " alt="" coords="705,155,895,181"/>
+<area shape="rect" id="node7" href="$PoProcessing_8h.html" title=" " alt="" coords="920,155,1115,181"/>
+<area shape="rect" id="node4" href="$CPLProcessing_8cpp.html" title="Process CPL ballot file and save the information of parties, candidates and seats." alt="" coords="445,229,611,256"/>
+<area shape="rect" id="node6" href="$IRVoteSystem_8h.html" title=" " alt="" coords="682,229,881,256"/>
+<area shape="rect" id="node8" href="$PoVoteSystem_8h.html" title=" " alt="" coords="933,229,1136,256"/>
+<area shape="rect" id="node10" href="$CPLVoteBallot_8cpp.html" title="Initiate CPLVoteBallot." alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node11" href="$CPLVoteSystem_8h.html" title="Conduct election and show winners." alt="" coords="192,155,403,181"/>
+<area shape="rect" id="node12" href="$CPLVoteSystem_8cpp.html" title="Conduct election according to CPL rules and show the winners." alt="" coords="210,229,385,256"/>
+</map>

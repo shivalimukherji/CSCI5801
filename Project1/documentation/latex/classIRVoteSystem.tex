@@ -1,0 +1,268 @@
+\hypertarget{classIRVoteSystem}{}\doxysection{I\+R\+Vote\+System Class Reference}
+\label{classIRVoteSystem}\index{IRVoteSystem@{IRVoteSystem}}
+
+
+The voting system to conduct the election and determine a winning candidate.  
+
+
+
+
+{\ttfamily \#include $<$I\+R\+Vote\+System.\+h$>$}
+
+
+
+Inheritance diagram for I\+R\+Vote\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classIRVoteSystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+R\+Vote\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classIRVoteSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIRVoteSystem_a91441c053cc675b47b84799f84f91309}{I\+R\+Vote\+System}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIRVoteSystem}{I\+R\+Vote\+System}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIRVoteSystem_a3960c57b0fa8c48f2ad484ce359fca74}{I\+R\+Vote\+System}} (\mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} $\ast$ballot\+System\+\_\+, \mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$ballot)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIRVoteSystem}{I\+R\+Vote\+System}} objec given the IR \mbox{\hyperlink{classBallot}{Ballot}} Processing system and the IR \mbox{\hyperlink{classBallot}{Ballot}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIRVoteSystem_a152815ad6b66d5cff349394dbe1b0819}{start\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Start the election process and determine a winner. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIRVoteSystem_ace4b10babe3a192486498494a0aba6ca}{conduct\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Helper function for \mbox{\hyperlink{classIRVoteSystem_a152815ad6b66d5cff349394dbe1b0819}{start\+Election()}} where it compares the percentage mapping and if there\textquotesingle{}s a majority winner. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \mbox{\hyperlink{classIRVoteSystem_a4fb6347571c306cf0dc76955e5ecb070}{get\+Elimnation}} ()
+\begin{DoxyCompactList}\small\item\em Get the eliminated candidate. It is the candidate with the lowest amount of ballots. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$ \mbox{\hyperlink{classIRVoteSystem_a85cf0ee75f45e84fc3f191b94e0a2bca}{get\+Processed\+Ballot}} () const
+\begin{DoxyCompactList}\small\item\em Get the information used for the vote election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRVoteSystem_a8b98ef5f1d598c0ab28d25c4a7e091d6}{set\+Processed\+Ballot}} (\mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$processed\+Ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the information used for the vote election. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} $\ast$ \mbox{\hyperlink{classIRVoteSystem_a1b700977ce0d16ba393ce8689bebff87}{get\+Ballot\+System}} () const
+\begin{DoxyCompactList}\small\item\em Get the ballot processing system used for the vote election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRVoteSystem_a616fa1070479a68e37ecbcc4cc3faa26}{set\+Ballot\+System}} (\mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} $\ast$ballot\+System\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the ballot processing system used for the vote election. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} \mbox{\hyperlink{classIRVoteSystem_a30eda79c84ca4d8decd091117dfe7604}{get\+Winner}} () const
+\begin{DoxyCompactList}\small\item\em Get the winner. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRVoteSystem_a2a68f3cb1edce73a368c390001c24546}{set\+Winner}} (const \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} \&winner\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the winner. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \mbox{\hyperlink{classIRVoteSystem_a05c9e49f5c7e76842370773b68ec8911}{get\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of Candidates in the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRVoteSystem_a4606361b0399f1ca07d6c33eb95d98ef}{set\+Candidates}} (const std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \&candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the list of Candidates in the election. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The voting system to conduct the election and determine a winning candidate. 
+
+For redistribution, the IR Vote System will use the ballot processing system associating with it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIRVoteSystem_a91441c053cc675b47b84799f84f91309}\label{classIRVoteSystem_a91441c053cc675b47b84799f84f91309}} 
+\index{IRVoteSystem@{IRVoteSystem}!IRVoteSystem@{IRVoteSystem}}
+\index{IRVoteSystem@{IRVoteSystem}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{IRVoteSystem()}{IRVoteSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I\+R\+Vote\+System\+::\+I\+R\+Vote\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classIRVoteSystem}{I\+R\+Vote\+System}} object. 
+
+\mbox{\Hypertarget{classIRVoteSystem_a3960c57b0fa8c48f2ad484ce359fca74}\label{classIRVoteSystem_a3960c57b0fa8c48f2ad484ce359fca74}} 
+\index{IRVoteSystem@{IRVoteSystem}!IRVoteSystem@{IRVoteSystem}}
+\index{IRVoteSystem@{IRVoteSystem}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{IRVoteSystem()}{IRVoteSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily I\+R\+Vote\+System\+::\+I\+R\+Vote\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} $\ast$}]{ballot\+System\+\_\+,  }\item[{\mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$}]{ballot }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classIRVoteSystem}{I\+R\+Vote\+System}} objec given the IR \mbox{\hyperlink{classBallot}{Ballot}} Processing system and the IR \mbox{\hyperlink{classBallot}{Ballot}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+System\+\_\+} & I\+R\+Processing$\ast$ the processing system used in order to redistribute \\
+\hline
+{\em ballot} & I\+R\+Ballot$\ast$ contains all the information to conduct the election \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIRVoteSystem_ace4b10babe3a192486498494a0aba6ca}\label{classIRVoteSystem_ace4b10babe3a192486498494a0aba6ca}} 
+\index{IRVoteSystem@{IRVoteSystem}!conductElection@{conductElection}}
+\index{conductElection@{conductElection}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{conductElection()}{conductElection()}}
+{\footnotesize\ttfamily bool I\+R\+Vote\+System\+::conduct\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Helper function for \mbox{\hyperlink{classIRVoteSystem_a152815ad6b66d5cff349394dbe1b0819}{start\+Election()}} where it compares the percentage mapping and if there\textquotesingle{}s a majority winner. 
+
+\begin{DoxyReturn}{Returns}
+true if the winner has been decided 
+
+false if somehow the winner has not been decided 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIVotingSystem_a85ddb547cc9eed2b18e9a4dc7f20896d}{I\+Voting\+System}}.
+
+\mbox{\Hypertarget{classIRVoteSystem_a1b700977ce0d16ba393ce8689bebff87}\label{classIRVoteSystem_a1b700977ce0d16ba393ce8689bebff87}} 
+\index{IRVoteSystem@{IRVoteSystem}!getBallotSystem@{getBallotSystem}}
+\index{getBallotSystem@{getBallotSystem}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getBallotSystem()}{getBallotSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}}$\ast$ I\+R\+Vote\+System\+::get\+Ballot\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the ballot processing system used for the vote election. 
+
+\begin{DoxyReturn}{Returns}
+I\+R\+Processing$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRVoteSystem_a05c9e49f5c7e76842370773b68ec8911}\label{classIRVoteSystem_a05c9e49f5c7e76842370773b68ec8911}} 
+\index{IRVoteSystem@{IRVoteSystem}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}}$\ast$$>$ I\+R\+Vote\+System\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of Candidates in the election. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+I\+R\+Candidate$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRVoteSystem_a4fb6347571c306cf0dc76955e5ecb070}\label{classIRVoteSystem_a4fb6347571c306cf0dc76955e5ecb070}} 
+\index{IRVoteSystem@{IRVoteSystem}!getElimnation@{getElimnation}}
+\index{getElimnation@{getElimnation}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getElimnation()}{getElimnation()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ I\+R\+Vote\+System\+::get\+Elimnation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the eliminated candidate. It is the candidate with the lowest amount of ballots. 
+
+It is a vector incase there is more than 1 candidate with the same amount of lowest ballots. \begin{DoxyReturn}{Returns}
+std\+::vector$<$\+I\+R\+Candidate$\ast$$>$ List of candidate with the lowest amount of ballots. Often times, there\textquotesingle{}s only 1 candidate. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRVoteSystem_a85cf0ee75f45e84fc3f191b94e0a2bca}\label{classIRVoteSystem_a85cf0ee75f45e84fc3f191b94e0a2bca}} 
+\index{IRVoteSystem@{IRVoteSystem}!getProcessedBallot@{getProcessedBallot}}
+\index{getProcessedBallot@{getProcessedBallot}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getProcessedBallot()}{getProcessedBallot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}}$\ast$ I\+R\+Vote\+System\+::get\+Processed\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the information used for the vote election. 
+
+\begin{DoxyReturn}{Returns}
+I\+R\+Ballot$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRVoteSystem_a30eda79c84ca4d8decd091117dfe7604}\label{classIRVoteSystem_a30eda79c84ca4d8decd091117dfe7604}} 
+\index{IRVoteSystem@{IRVoteSystem}!getWinner@{getWinner}}
+\index{getWinner@{getWinner}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getWinner()}{getWinner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} I\+R\+Vote\+System\+::get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the winner. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} the winner 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRVoteSystem_a616fa1070479a68e37ecbcc4cc3faa26}\label{classIRVoteSystem_a616fa1070479a68e37ecbcc4cc3faa26}} 
+\index{IRVoteSystem@{IRVoteSystem}!setBallotSystem@{setBallotSystem}}
+\index{setBallotSystem@{setBallotSystem}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{setBallotSystem()}{setBallotSystem()}}
+{\footnotesize\ttfamily void I\+R\+Vote\+System\+::set\+Ballot\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} $\ast$}]{ballot\+System\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the ballot processing system used for the vote election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+System\+\_\+} & I\+R\+Processing$\ast$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRVoteSystem_a4606361b0399f1ca07d6c33eb95d98ef}\label{classIRVoteSystem_a4606361b0399f1ca07d6c33eb95d98ef}} 
+\index{IRVoteSystem@{IRVoteSystem}!setCandidates@{setCandidates}}
+\index{setCandidates@{setCandidates}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{setCandidates()}{setCandidates()}}
+{\footnotesize\ttfamily void I\+R\+Vote\+System\+::set\+Candidates (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \&}]{candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of Candidates in the election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates\+\_\+} & vector$<$\+I\+R\+Candidate$\ast$$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRVoteSystem_a8b98ef5f1d598c0ab28d25c4a7e091d6}\label{classIRVoteSystem_a8b98ef5f1d598c0ab28d25c4a7e091d6}} 
+\index{IRVoteSystem@{IRVoteSystem}!setProcessedBallot@{setProcessedBallot}}
+\index{setProcessedBallot@{setProcessedBallot}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{setProcessedBallot()}{setProcessedBallot()}}
+{\footnotesize\ttfamily void I\+R\+Vote\+System\+::set\+Processed\+Ballot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$}]{processed\+Ballot\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the information used for the vote election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em processed\+Ballot\+\_\+} & I\+R\+Ballot$\ast$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRVoteSystem_a2a68f3cb1edce73a368c390001c24546}\label{classIRVoteSystem_a2a68f3cb1edce73a368c390001c24546}} 
+\index{IRVoteSystem@{IRVoteSystem}!setWinner@{setWinner}}
+\index{setWinner@{setWinner}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{setWinner()}{setWinner()}}
+{\footnotesize\ttfamily void I\+R\+Vote\+System\+::set\+Winner (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} \&}]{winner\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the winner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner\+\_\+} & \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRVoteSystem_a152815ad6b66d5cff349394dbe1b0819}\label{classIRVoteSystem_a152815ad6b66d5cff349394dbe1b0819}} 
+\index{IRVoteSystem@{IRVoteSystem}!startElection@{startElection}}
+\index{startElection@{startElection}!IRVoteSystem@{IRVoteSystem}}
+\doxysubsubsection{\texorpdfstring{startElection()}{startElection()}}
+{\footnotesize\ttfamily bool I\+R\+Vote\+System\+::start\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Start the election process and determine a winner. 
+
+\begin{DoxyReturn}{Returns}
+true if the winner has been decided 
+
+false if somehow the winner has not been decided 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIVotingSystem_a227a27e5ac833432513929470424f92d}{I\+Voting\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{IRVoteSystem_8h}{I\+R\+Vote\+System.\+h}}\item 
+src/I\+R\+Vote\+System.\+cpp\end{DoxyCompactItemize}

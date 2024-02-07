@@ -1,0 +1,414 @@
+\hypertarget{classIBallotProcessing}{}\doxysection{I\+Ballot\+Processing Class Reference}
+\label{classIBallotProcessing}\index{IBallotProcessing@{IBallotProcessing}}
+
+
+Inheritance diagram for I\+Ballot\+Processing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIBallotProcessing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+Ballot\+Processing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classIBallotProcessing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classIBallotProcessing_a3eb01b2f1102ff4e0bdb4b99ab40c45d}{set\+Up}} ()=0
+\begin{DoxyCompactList}\small\item\em Sets up the ballot processing object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIBallotProcessing_a7a453ce6dcb22bc4fac5838b10fac1d9}{read}} ()=0
+\begin{DoxyCompactList}\small\item\em Reads ballots from the file. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} $\ast$ \mbox{\hyperlink{classIBallotProcessing_a339b858b8031e167da82adab2a59024f}{output}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the output of the ballot processing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIBallotProcessing_ab3100d0d5a06d47dd2bfa323140032b6}\label{classIBallotProcessing_ab3100d0d5a06d47dd2bfa323140032b6}} 
+void {\bfseries produce\+Table} ()
+\item 
+virtual F\+I\+LE $\ast$ \mbox{\hyperlink{classIBallotProcessing_aa369f49b5ea07ac3b82c408c47e6d929}{get\+File}} () const
+\begin{DoxyCompactList}\small\item\em Returns the file used for reading ballots. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIBallotProcessing_a6f088a2d9a0b3f4395ab2d1164cc27ce}{set\+File}} (F\+I\+LE $\ast$file\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets the file used for reading ballots. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classIBallotProcessing_afbe9219d632d459f1d70add488c30cdc}{get\+B\+Lines\+To\+Read}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of ballot lines to read from the file. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIBallotProcessing_ad1479669a7e98e7866c4676995bde96c}{set\+B\+Lines\+To\+Read}} (int b\+Lines\+To\+Read\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets the number of ballot lines to read from the file. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} $\ast$ \mbox{\hyperlink{classIBallotProcessing_a485c87245af0cc47f15a7389db6502c9}{get\+Vote\+Ballot}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} object representing the ballot. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIBallotProcessing_ab6ab9226ec2cef068f499aa5a4f14dd7}{set\+Vote\+Ballot}} (\mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} $\ast$vote\+Ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} object representing the ballot. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classIBallotProcessing_ab728072bdb85e515a9648aa14672196b}{get\+Map\+Ballot}} ()
+\begin{DoxyCompactList}\small\item\em Returns the map ballot. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIBallotProcessing_a510b9e226a13da7503151d2795026b24}{set\+Map\+Ballot}} (const std\+::vector$<$ int $>$ \&map\+Ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets the map ballot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAuditFile}{Audit\+File}} $\ast$ \mbox{\hyperlink{classIBallotProcessing_a85bfb900bd7b5d24e437be85539fc925}{get\+Audit}} () const
+\begin{DoxyCompactList}\small\item\em Returns the audit file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIBallotProcessing_a1fad80d98cdf6f114881fb072974647c}{set\+Audit}} (\mbox{\hyperlink{classAuditFile}{Audit\+File}} $\ast$audit\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets the audit file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIBallotProcessing_a9d567ef72c510102d160fd1680c8cc22}{get\+Auditing}} () const
+\begin{DoxyCompactList}\small\item\em Returns the audit status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIBallotProcessing_a293a5f960166cab34f1a066a5dde690b}{set\+Auditing}} (int auditing\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets the auditing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIBallotProcessing_a725a074fc1d1cdfcf3252e5cac33bdb4}{get\+Total\+Ballots}} () const
+\begin{DoxyCompactList}\small\item\em Get the total amount of ballots. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIBallotProcessing_afff9d1a28365a1fc497ed7f8b32eb425}{set\+Total\+Ballots}} (int total\+Ballots\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the total amount of ballots. \end{DoxyCompactList}\item 
+std\+::vector$<$ string $>$ \mbox{\hyperlink{classIBallotProcessing_afb9462084d91327cf1405dca2b3b5437}{get\+Invalid\+Files}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of invalid files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIBallotProcessing_a99dc770c70347c6be2894949f64a845b}{set\+Invalid\+Files}} (const std\+::vector$<$ string $>$ \&invalid\+Files)
+\begin{DoxyCompactList}\small\item\em Set the list of invalid files. \end{DoxyCompactList}\item 
+std\+::vector$<$ string $>$ \mbox{\hyperlink{classIBallotProcessing_a0930a4e6062ede40cf3742439e1f0249}{get\+Files}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIBallotProcessing_a0f83048c6734301eab356438f49a40c1}{set\+Files}} (const std\+::vector$<$ string $>$ \&files\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the list of files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_a5c1e704eaeff7bc0633608a5384deff9}\label{classIBallotProcessing_a5c1e704eaeff7bc0633608a5384deff9}} 
+F\+I\+LE $\ast$ {\bfseries file}
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_a0483cbfdc46f388ae1130a04fbe67e36}\label{classIBallotProcessing_a0483cbfdc46f388ae1130a04fbe67e36}} 
+std\+::vector$<$ string $>$ {\bfseries files} = \{\char`\"{}N/A\char`\"{}\}
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_a5a5eeb2ba13652c5f1fdc417cb8e6355}\label{classIBallotProcessing_a5a5eeb2ba13652c5f1fdc417cb8e6355}} 
+std\+::vector$<$ string $>$ {\bfseries invalid\+\_\+files}
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_afbbf74af11efaa6f5e1fc351ef9f14c3}\label{classIBallotProcessing_afbbf74af11efaa6f5e1fc351ef9f14c3}} 
+int {\bfseries b\+Lines\+To\+Read}
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_a1e0178c15d363147f88bb8a5c74c3fac}\label{classIBallotProcessing_a1e0178c15d363147f88bb8a5c74c3fac}} 
+int {\bfseries total\+Ballots} = 0
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_ab5f4940fb66315504bf68e25611f52b3}\label{classIBallotProcessing_ab5f4940fb66315504bf68e25611f52b3}} 
+\mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} $\ast$ {\bfseries vote\+Ballot}
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_a08c1e7910a0aac07e03aee9fd690f5e7}\label{classIBallotProcessing_a08c1e7910a0aac07e03aee9fd690f5e7}} 
+std\+::vector$<$ int $>$ {\bfseries map\+Ballot}
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_a75e3035a02bf960f505dc5fd8c22424f}\label{classIBallotProcessing_a75e3035a02bf960f505dc5fd8c22424f}} 
+\mbox{\hyperlink{classAuditFile}{Audit\+File}} $\ast$ {\bfseries audit}
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_a240a2847faf042880f4af95c2eff771c}\label{classIBallotProcessing_a240a2847faf042880f4af95c2eff771c}} 
+int {\bfseries auditing} = 0
+\item 
+\mbox{\Hypertarget{classIBallotProcessing_a0e0c8b81f53e85c27086f6b4c17ad566}\label{classIBallotProcessing_a0e0c8b81f53e85c27086f6b4c17ad566}} 
+\mbox{\hyperlink{classTableBuilder}{Table\+Builder}} {\bfseries table} = \mbox{\hyperlink{classTableBuilder}{Table\+Builder}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIBallotProcessing_a85bfb900bd7b5d24e437be85539fc925}\label{classIBallotProcessing_a85bfb900bd7b5d24e437be85539fc925}} 
+\index{IBallotProcessing@{IBallotProcessing}!getAudit@{getAudit}}
+\index{getAudit@{getAudit}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getAudit()}{getAudit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAuditFile}{Audit\+File}}$\ast$ I\+Ballot\+Processing\+::get\+Audit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the audit file. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to an \mbox{\hyperlink{classAuditFile}{Audit\+File}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_a9d567ef72c510102d160fd1680c8cc22}\label{classIBallotProcessing_a9d567ef72c510102d160fd1680c8cc22}} 
+\index{IBallotProcessing@{IBallotProcessing}!getAuditing@{getAuditing}}
+\index{getAuditing@{getAuditing}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getAuditing()}{getAuditing()}}
+{\footnotesize\ttfamily int I\+Ballot\+Processing\+::get\+Auditing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the audit status. 
+
+\begin{DoxyReturn}{Returns}
+1 if auditing is enabled, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_afbe9219d632d459f1d70add488c30cdc}\label{classIBallotProcessing_afbe9219d632d459f1d70add488c30cdc}} 
+\index{IBallotProcessing@{IBallotProcessing}!getBLinesToRead@{getBLinesToRead}}
+\index{getBLinesToRead@{getBLinesToRead}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getBLinesToRead()}{getBLinesToRead()}}
+{\footnotesize\ttfamily virtual int I\+Ballot\+Processing\+::get\+B\+Lines\+To\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the number of ballot lines to read from the file. 
+
+\begin{DoxyReturn}{Returns}
+The number of ballot lines to read. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_aa369f49b5ea07ac3b82c408c47e6d929}\label{classIBallotProcessing_aa369f49b5ea07ac3b82c408c47e6d929}} 
+\index{IBallotProcessing@{IBallotProcessing}!getFile@{getFile}}
+\index{getFile@{getFile}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getFile()}{getFile()}}
+{\footnotesize\ttfamily virtual F\+I\+LE$\ast$ I\+Ballot\+Processing\+::get\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the file used for reading ballots. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to a F\+I\+LE object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_a0930a4e6062ede40cf3742439e1f0249}\label{classIBallotProcessing_a0930a4e6062ede40cf3742439e1f0249}} 
+\index{IBallotProcessing@{IBallotProcessing}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$string$>$ I\+Ballot\+Processing\+::get\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of files. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$string$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_afb9462084d91327cf1405dca2b3b5437}\label{classIBallotProcessing_afb9462084d91327cf1405dca2b3b5437}} 
+\index{IBallotProcessing@{IBallotProcessing}!getInvalidFiles@{getInvalidFiles}}
+\index{getInvalidFiles@{getInvalidFiles}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getInvalidFiles()}{getInvalidFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$string$>$ I\+Ballot\+Processing\+::get\+Invalid\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of invalid files. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$string$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_ab728072bdb85e515a9648aa14672196b}\label{classIBallotProcessing_ab728072bdb85e515a9648aa14672196b}} 
+\index{IBallotProcessing@{IBallotProcessing}!getMapBallot@{getMapBallot}}
+\index{getMapBallot@{getMapBallot}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getMapBallot()}{getMapBallot()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ I\+Ballot\+Processing\+::get\+Map\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the map ballot. 
+
+\begin{DoxyReturn}{Returns}
+A vector of integers representing the map ballot. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_a725a074fc1d1cdfcf3252e5cac33bdb4}\label{classIBallotProcessing_a725a074fc1d1cdfcf3252e5cac33bdb4}} 
+\index{IBallotProcessing@{IBallotProcessing}!getTotalBallots@{getTotalBallots}}
+\index{getTotalBallots@{getTotalBallots}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getTotalBallots()}{getTotalBallots()}}
+{\footnotesize\ttfamily int I\+Ballot\+Processing\+::get\+Total\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the total amount of ballots. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_a485c87245af0cc47f15a7389db6502c9}\label{classIBallotProcessing_a485c87245af0cc47f15a7389db6502c9}} 
+\index{IBallotProcessing@{IBallotProcessing}!getVoteBallot@{getVoteBallot}}
+\index{getVoteBallot@{getVoteBallot}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{getVoteBallot()}{getVoteBallot()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}}$\ast$ I\+Ballot\+Processing\+::get\+Vote\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns a pointer to the \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} object representing the ballot. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to an \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIBallotProcessing_a339b858b8031e167da82adab2a59024f}\label{classIBallotProcessing_a339b858b8031e167da82adab2a59024f}} 
+\index{IBallotProcessing@{IBallotProcessing}!output@{output}}
+\index{output@{output}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}}$\ast$ I\+Ballot\+Processing\+::output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the output of the ballot processing. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to an \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} object representing the ballot. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIRProcessing_ad72b84fdaf1c4074066a93e210dcd956}{I\+R\+Processing}}, \mbox{\hyperlink{classPoProcessing_a163da8b0af5814e70c4746f12f940f2e}{Po\+Processing}}, and \mbox{\hyperlink{classCPLProcessing_aa3bf172d820141263c1d90db82bc12b2}{C\+P\+L\+Processing}}.
+
+\mbox{\Hypertarget{classIBallotProcessing_a7a453ce6dcb22bc4fac5838b10fac1d9}\label{classIBallotProcessing_a7a453ce6dcb22bc4fac5838b10fac1d9}} 
+\index{IBallotProcessing@{IBallotProcessing}!read@{read}}
+\index{read@{read}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily virtual bool I\+Ballot\+Processing\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads ballots from the file. 
+
+\begin{DoxyReturn}{Returns}
+true if read is successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIRProcessing_a1d34f7e59abd5a8d64c7aa0d7d1adf6c}{I\+R\+Processing}}, \mbox{\hyperlink{classPoProcessing_a404c79462befc29c5be712a64b23bbf1}{Po\+Processing}}, and \mbox{\hyperlink{classCPLProcessing_af0b79fc6169efef9250ed3d18a0de8a0}{C\+P\+L\+Processing}}.
+
+\mbox{\Hypertarget{classIBallotProcessing_a1fad80d98cdf6f114881fb072974647c}\label{classIBallotProcessing_a1fad80d98cdf6f114881fb072974647c}} 
+\index{IBallotProcessing@{IBallotProcessing}!setAudit@{setAudit}}
+\index{setAudit@{setAudit}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setAudit()}{setAudit()}}
+{\footnotesize\ttfamily void I\+Ballot\+Processing\+::set\+Audit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAuditFile}{Audit\+File}} $\ast$}]{audit\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the audit file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audit\+\_\+} & A pointer to an \mbox{\hyperlink{classAuditFile}{Audit\+File}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIBallotProcessing_a293a5f960166cab34f1a066a5dde690b}\label{classIBallotProcessing_a293a5f960166cab34f1a066a5dde690b}} 
+\index{IBallotProcessing@{IBallotProcessing}!setAuditing@{setAuditing}}
+\index{setAuditing@{setAuditing}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setAuditing()}{setAuditing()}}
+{\footnotesize\ttfamily void I\+Ballot\+Processing\+::set\+Auditing (\begin{DoxyParamCaption}\item[{int}]{auditing\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the auditing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em auditing\+\_\+} & to the auditing. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIBallotProcessing_ad1479669a7e98e7866c4676995bde96c}\label{classIBallotProcessing_ad1479669a7e98e7866c4676995bde96c}} 
+\index{IBallotProcessing@{IBallotProcessing}!setBLinesToRead@{setBLinesToRead}}
+\index{setBLinesToRead@{setBLinesToRead}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setBLinesToRead()}{setBLinesToRead()}}
+{\footnotesize\ttfamily virtual void I\+Ballot\+Processing\+::set\+B\+Lines\+To\+Read (\begin{DoxyParamCaption}\item[{int}]{b\+Lines\+To\+Read\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the number of ballot lines to read from the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Lines\+To\+Read\+\_\+} & The number of ballot lines to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIBallotProcessing_a6f088a2d9a0b3f4395ab2d1164cc27ce}\label{classIBallotProcessing_a6f088a2d9a0b3f4395ab2d1164cc27ce}} 
+\index{IBallotProcessing@{IBallotProcessing}!setFile@{setFile}}
+\index{setFile@{setFile}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setFile()}{setFile()}}
+{\footnotesize\ttfamily virtual void I\+Ballot\+Processing\+::set\+File (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the file used for reading ballots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+} & A pointer to a F\+I\+LE object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIBallotProcessing_a0f83048c6734301eab356438f49a40c1}\label{classIBallotProcessing_a0f83048c6734301eab356438f49a40c1}} 
+\index{IBallotProcessing@{IBallotProcessing}!setFiles@{setFiles}}
+\index{setFiles@{setFiles}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setFiles()}{setFiles()}}
+{\footnotesize\ttfamily void I\+Ballot\+Processing\+::set\+Files (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ string $>$ \&}]{files\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em files\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIBallotProcessing_a99dc770c70347c6be2894949f64a845b}\label{classIBallotProcessing_a99dc770c70347c6be2894949f64a845b}} 
+\index{IBallotProcessing@{IBallotProcessing}!setInvalidFiles@{setInvalidFiles}}
+\index{setInvalidFiles@{setInvalidFiles}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setInvalidFiles()}{setInvalidFiles()}}
+{\footnotesize\ttfamily void I\+Ballot\+Processing\+::set\+Invalid\+Files (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ string $>$ \&}]{invalid\+Files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of invalid files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em invalid\+Files} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIBallotProcessing_a510b9e226a13da7503151d2795026b24}\label{classIBallotProcessing_a510b9e226a13da7503151d2795026b24}} 
+\index{IBallotProcessing@{IBallotProcessing}!setMapBallot@{setMapBallot}}
+\index{setMapBallot@{setMapBallot}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setMapBallot()}{setMapBallot()}}
+{\footnotesize\ttfamily virtual void I\+Ballot\+Processing\+::set\+Map\+Ballot (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{map\+Ballot\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the map ballot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Ballot\+\_\+} & A vector of integers representing the map ballot. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIBallotProcessing_afff9d1a28365a1fc497ed7f8b32eb425}\label{classIBallotProcessing_afff9d1a28365a1fc497ed7f8b32eb425}} 
+\index{IBallotProcessing@{IBallotProcessing}!setTotalBallots@{setTotalBallots}}
+\index{setTotalBallots@{setTotalBallots}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setTotalBallots()}{setTotalBallots()}}
+{\footnotesize\ttfamily void I\+Ballot\+Processing\+::set\+Total\+Ballots (\begin{DoxyParamCaption}\item[{int}]{total\+Ballots\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the total amount of ballots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Ballots\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIBallotProcessing_a3eb01b2f1102ff4e0bdb4b99ab40c45d}\label{classIBallotProcessing_a3eb01b2f1102ff4e0bdb4b99ab40c45d}} 
+\index{IBallotProcessing@{IBallotProcessing}!setUp@{setUp}}
+\index{setUp@{setUp}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily virtual bool I\+Ballot\+Processing\+::set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets up the ballot processing object. 
+
+\begin{DoxyReturn}{Returns}
+true if setup is successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIRProcessing_a673b9307786888632e25cb9258c2f2f8}{I\+R\+Processing}}, \mbox{\hyperlink{classPoProcessing_afface78502a73a0f9d5d90c44cf13b57}{Po\+Processing}}, and \mbox{\hyperlink{classCPLProcessing_a6f579708d0544e77daf57a7d7f958cc6}{C\+P\+L\+Processing}}.
+
+\mbox{\Hypertarget{classIBallotProcessing_ab6ab9226ec2cef068f499aa5a4f14dd7}\label{classIBallotProcessing_ab6ab9226ec2cef068f499aa5a4f14dd7}} 
+\index{IBallotProcessing@{IBallotProcessing}!setVoteBallot@{setVoteBallot}}
+\index{setVoteBallot@{setVoteBallot}!IBallotProcessing@{IBallotProcessing}}
+\doxysubsubsection{\texorpdfstring{setVoteBallot()}{setVoteBallot()}}
+{\footnotesize\ttfamily virtual void I\+Ballot\+Processing\+::set\+Vote\+Ballot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} $\ast$}]{vote\+Ballot\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} object representing the ballot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vote\+Ballot\+\_\+} & A pointer to an \mbox{\hyperlink{classIVoteBallot}{I\+Vote\+Ballot}} object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{IBallotProcessing_8h}{I\+Ballot\+Processing.\+h}}\end{DoxyCompactItemize}

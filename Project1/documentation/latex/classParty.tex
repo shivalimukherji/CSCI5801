@@ -1,0 +1,172 @@
+\hypertarget{classParty}{}\doxysection{Party Class Reference}
+\label{classParty}\index{Party@{Party}}
+
+
+A class representing a political party with candidate information and seat limits.  
+
+
+
+
+{\ttfamily \#include $<$Party.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classParty_ac2f829d02d1466184af29a39e65800f9}{Party}} (vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ candidates, int max\+Seat, string name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classParty}{Party}} object with the given candidates, maximum number of seats, and name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classParty_a31d77f763e1dc9549532653a4a0dfde5}{Party}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new, empty \mbox{\hyperlink{classParty}{Party}} object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classParty_a7b9b40310322dd3e52127be02f84f0ff}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a083345d28ebb067802d4dc09489625c7}{set\+Name}} (string new\+Name)
+\begin{DoxyCompactList}\small\item\em Set the name of the party. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classParty_a2194a0052d10c32265e2702f2ab50f40}{get\+Candidate}} ()
+\begin{DoxyCompactList}\small\item\em Get the vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects representing the candidates in the party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a0e100ab95eb6aba224bf23924be2c13b}{set\+Max\+Seat}} (int new\+Max\+Seat)
+\begin{DoxyCompactList}\small\item\em Set the maximum number of seats the party can have. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_aea0bcd12efeff82c117dd9ceec1e1acb}{set\+Candidate}} (\mbox{\hyperlink{classCandidate}{Candidate}} candidate)
+\begin{DoxyCompactList}\small\item\em Add a new \mbox{\hyperlink{classCandidate}{Candidate}} to the party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_a0939aa3da4f3d10cf9d3bdb0c099ed18}{get\+Max\+Seat}} ()
+\begin{DoxyCompactList}\small\item\em Get the maximum number of seats the party can have. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParty_aed424dc23cfb109927b64ae0422b2dfe}\label{classParty_aed424dc23cfb109927b64ae0422b2dfe}} 
+vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries candidates}
+\item 
+\mbox{\Hypertarget{classParty_aff810a486104eb8f877f031fb1ef4d17}\label{classParty_aff810a486104eb8f877f031fb1ef4d17}} 
+int {\bfseries max\+Seat}
+\item 
+\mbox{\Hypertarget{classParty_aec88988333d7ef425edf66249ec30a79}\label{classParty_aec88988333d7ef425edf66249ec30a79}} 
+string {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a political party with candidate information and seat limits. 
+
+This class stores a vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects, an integer maximum number of seats, and a string name for the party. It provides methods to get and set these values, as well as add candidates to the party. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParty_ac2f829d02d1466184af29a39e65800f9}\label{classParty_ac2f829d02d1466184af29a39e65800f9}} 
+\index{Party@{Party}!Party@{Party}}
+\index{Party@{Party}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{Party()}{Party()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Party\+::\+Party (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$}]{candidates,  }\item[{int}]{max\+Seat,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classParty}{Party}} object with the given candidates, maximum number of seats, and name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates} & A vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects representing the candidates in the party. \\
+\hline
+{\em max\+Seat} & An integer representing the maximum number of seats the party can have. \\
+\hline
+{\em name} & A string representing the name of the party. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a31d77f763e1dc9549532653a4a0dfde5}\label{classParty_a31d77f763e1dc9549532653a4a0dfde5}} 
+\index{Party@{Party}!Party@{Party}}
+\index{Party@{Party}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{Party()}{Party()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Party\+::\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new, empty \mbox{\hyperlink{classParty}{Party}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParty_a2194a0052d10c32265e2702f2ab50f40}\label{classParty_a2194a0052d10c32265e2702f2ab50f40}} 
+\index{Party@{Party}!getCandidate@{getCandidate}}
+\index{getCandidate@{getCandidate}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getCandidate()}{getCandidate()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classCandidate}{Candidate}}$>$ Party\+::get\+Candidate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects representing the candidates in the party. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects representing the candidates in the party. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a0939aa3da4f3d10cf9d3bdb0c099ed18}\label{classParty_a0939aa3da4f3d10cf9d3bdb0c099ed18}} 
+\index{Party@{Party}!getMaxSeat@{getMaxSeat}}
+\index{getMaxSeat@{getMaxSeat}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getMaxSeat()}{getMaxSeat()}}
+{\footnotesize\ttfamily int Party\+::get\+Max\+Seat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the maximum number of seats the party can have. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the maximum number of seats the party can have. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a7b9b40310322dd3e52127be02f84f0ff}\label{classParty_a7b9b40310322dd3e52127be02f84f0ff}} 
+\index{Party@{Party}!getName@{getName}}
+\index{getName@{getName}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Party\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the party. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the name of the party. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_aea0bcd12efeff82c117dd9ceec1e1acb}\label{classParty_aea0bcd12efeff82c117dd9ceec1e1acb}} 
+\index{Party@{Party}!setCandidate@{setCandidate}}
+\index{setCandidate@{setCandidate}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{setCandidate()}{setCandidate()}}
+{\footnotesize\ttfamily void Party\+::set\+Candidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidate}{Candidate}}}]{candidate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new \mbox{\hyperlink{classCandidate}{Candidate}} to the party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate} & A \mbox{\hyperlink{classCandidate}{Candidate}} object representing the new candidate to add to the party. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a0e100ab95eb6aba224bf23924be2c13b}\label{classParty_a0e100ab95eb6aba224bf23924be2c13b}} 
+\index{Party@{Party}!setMaxSeat@{setMaxSeat}}
+\index{setMaxSeat@{setMaxSeat}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{setMaxSeat()}{setMaxSeat()}}
+{\footnotesize\ttfamily void Party\+::set\+Max\+Seat (\begin{DoxyParamCaption}\item[{int}]{new\+Max\+Seat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the maximum number of seats the party can have. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Max\+Seat} & An integer representing the new maximum number of seats for the party. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a083345d28ebb067802d4dc09489625c7}\label{classParty_a083345d28ebb067802d4dc09489625c7}} 
+\index{Party@{Party}!setName@{setName}}
+\index{setName@{setName}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Party\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{new\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Name} & A string representing the new name of the party. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{Party_8h}{Party.\+h}}\item 
+src/Party.\+cpp\end{DoxyCompactItemize}

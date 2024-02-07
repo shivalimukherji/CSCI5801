@@ -1,0 +1,6 @@
+<map id="IVoteBallot" name="IVoteBallot">
+<area shape="rect" id="node1" title="The abstract class where all VoteBallots are inherited from." alt="" coords="132,5,227,32"/>
+<area shape="rect" id="node2" href="$classCPLVoteBallot.html" title=" " alt="" coords="5,80,119,107"/>
+<area shape="rect" id="node3" href="$classIRBallot.html" title="An output class from the IR Processing class. This class holds objects/information for the IR Vote Sy..." alt="" coords="143,80,216,107"/>
+<area shape="rect" id="node4" href="$classPoBallot.html" title="An output class from the Po Processing class. This class holds objects/information for the Po Vote Sy..." alt="" coords="240,80,316,107"/>
+</map>

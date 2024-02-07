@@ -1,0 +1,9 @@
+<map id="SpecialCaseTests" name="SpecialCaseTests">
+<area shape="rect" id="node1" title=" " alt="" coords="181,185,315,212"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,107,108"/>
+<area shape="rect" id="node3" href="$classIRCandidate.html" title="A candidate class for an Instant Runoff Candidate. This classs is for holding ballots." alt="" coords="131,81,232,108"/>
+<area shape="rect" id="node4" href="$classCandidate.html" title="An output class from the IBallotProcessing interface. This class holds objects/information for an ele..." alt="" coords="137,5,225,32"/>
+<area shape="rect" id="node5" href="$classPopularityCase.html" title="A class representing a popularity special case implementation." alt="" coords="256,81,376,108"/>
+<area shape="rect" id="node6" href="$classISpecialCase.html" title=" " alt="" coords="329,5,434,32"/>
+<area shape="rect" id="node7" href="$classTieBreaker.html" title="A class representing a tiebreaker special case implementation." alt="" coords="400,81,491,108"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="IRBallot" name="IRBallot">
+<area shape="rect" id="node1" title="An output class from the IR Processing class. This class holds objects/information for the IR Vote Sy..." alt="" coords="16,80,89,107"/>
+<area shape="rect" id="node2" href="$classIVoteBallot.html" title="The abstract class where all VoteBallots are inherited from." alt="" coords="5,5,100,32"/>
+</map>

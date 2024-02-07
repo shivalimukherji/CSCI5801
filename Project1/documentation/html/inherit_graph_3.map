@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classCandidate.html" title="An output class from the IBallotProcessing interface. This class holds objects/information for an ele..." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node2" href="$classIRCandidate.html" title="A candidate class for an Instant Runoff Candidate. This classs is for holding ballots." alt="" coords="141,5,243,32"/>
+</map>

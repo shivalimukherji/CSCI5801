@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['iballotprocessing_80',['IBallotProcessing',['../classIBallotProcessing.html',1,'']]],
+  ['iballotprocessing_2eh_81',['IBallotProcessing.h',['../IBallotProcessing_8h.html',1,'']]],
+  ['icpllottery_2eh_82',['ICPLLottery.h',['../ICPLLottery_8h.html',1,'']]],
+  ['increaserank_83',['increaseRank',['../classBallot.html#abeb91e5145bf89bea75f724d41f3c950',1,'Ballot']]],
+  ['irballot_84',['IRBallot',['../classIRBallot.html',1,'IRBallot'],['../classIRBallot.html#abd7967c920c4fa7935afa2c213bee79c',1,'IRBallot::IRBallot()']]],
+  ['irballot_2eh_85',['IRBallot.h',['../IRBallot_8h.html',1,'']]],
+  ['irballottests_86',['IRBallotTests',['../classIRBallotTests.html',1,'']]],
+  ['ircandidate_87',['IRCandidate',['../classIRCandidate.html',1,'IRCandidate'],['../classIRCandidate.html#a06e4617c16a060c86a96e913b955402a',1,'IRCandidate::IRCandidate(string name)'],['../classIRCandidate.html#a4167a617fffe6b336f88858f24a5c1ac',1,'IRCandidate::IRCandidate()']]],
+  ['ircandidate_2eh_88',['IRCandidate.h',['../IRCandidate_8h.html',1,'']]],
+  ['ircandidatetests_89',['IRCandidateTests',['../classIRCandidateTests.html',1,'']]],
+  ['irprocessing_90',['IRProcessing',['../classIRProcessing.html',1,'IRProcessing'],['../classIRProcessing.html#afa0dce054120e3f696678c0d26dee9a0',1,'IRProcessing::IRProcessing(FILE *file_)'],['../classIRProcessing.html#a6587d28c9e2ae9c82992218145cbe881',1,'IRProcessing::IRProcessing(FILE *file_, std::vector&lt; std::string &gt; files_)'],['../classIRProcessing.html#a659d0ff82353f78277c16d8e932dbb3d',1,'IRProcessing::IRProcessing(IRBallot *ballot_)']]],
+  ['irprocessing_2eh_91',['IRProcessing.h',['../IRProcessing_8h.html',1,'']]],
+  ['irprocessingtests_92',['IRProcessingTests',['../classIRProcessingTests.html',1,'']]],
+  ['irvotesystem_93',['IRVoteSystem',['../classIRVoteSystem.html',1,'IRVoteSystem'],['../classIRVoteSystem.html#a91441c053cc675b47b84799f84f91309',1,'IRVoteSystem::IRVoteSystem()'],['../classIRVoteSystem.html#a3960c57b0fa8c48f2ad484ce359fca74',1,'IRVoteSystem::IRVoteSystem(IRProcessing *ballotSystem_, IRBallot *ballot)']]],
+  ['irvotesystem_2eh_94',['IRVoteSystem.h',['../IRVoteSystem_8h.html',1,'']]],
+  ['irvotesystemtests_95',['IRVoteSystemTests',['../classIRVoteSystemTests.html',1,'']]],
+  ['ispecialcase_96',['ISpecialCase',['../classISpecialCase.html',1,'']]],
+  ['ispecialcase_2eh_97',['ISpecialCase.h',['../ISpecialCase_8h.html',1,'']]],
+  ['ivoteballot_98',['IVoteBallot',['../classIVoteBallot.html',1,'']]],
+  ['ivoteballot_2eh_99',['IVoteBallot.h',['../IVoteBallot_8h.html',1,'']]],
+  ['ivotingsystem_100',['IVotingSystem',['../classIVotingSystem.html',1,'']]],
+  ['ivotingsystem_2eh_101',['IVotingSystem.h',['../IVotingSystem_8h.html',1,'']]]
+];

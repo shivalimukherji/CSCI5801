@@ -1,0 +1,223 @@
+\hypertarget{classPoVoteSystem}{}\doxysection{Po\+Vote\+System Class Reference}
+\label{classPoVoteSystem}\index{PoVoteSystem@{PoVoteSystem}}
+
+
+The voting system to conduct the election and determine a winning candidate.  
+
+
+
+
+{\ttfamily \#include $<$Po\+Vote\+System.\+h$>$}
+
+
+
+Inheritance diagram for Po\+Vote\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classPoVoteSystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Po\+Vote\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classPoVoteSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoVoteSystem_a1933a7808bb76ad01fec37fd3c3073eb}{Po\+Vote\+System}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPoVoteSystem}{Po\+Vote\+System}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoVoteSystem_a3f28b84751307083beeadc9963cc8fe7}{Po\+Vote\+System}} (\mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$ballot)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPoVoteSystem}{Po\+Vote\+System}} objec given the IR \mbox{\hyperlink{classBallot}{Ballot}} Processing system and the IR \mbox{\hyperlink{classBallot}{Ballot}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoVoteSystem_a7230127b81095736613f4cffec93d487}{start\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Start the election process and determine a winner. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPoVoteSystem_a5c49e2ee470ddec04d773c333059f728}{conduct\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Helper function for \mbox{\hyperlink{classPoVoteSystem_a7230127b81095736613f4cffec93d487}{start\+Election()}} where it compares the percentage mapping and if there\textquotesingle{}s a majority winner. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$ \mbox{\hyperlink{classPoVoteSystem_ad3c16ff187b003522232c7b4cf990f0d}{get\+Processed\+Ballot}} () const
+\begin{DoxyCompactList}\small\item\em Get the information used for the vote election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoVoteSystem_a73599741ed1e1dc97c3b9765b4d219ce}{set\+Processed\+Ballot}} (\mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$processed\+Ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the information used for the vote election. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCandidate}{Candidate}} \mbox{\hyperlink{classPoVoteSystem_aa636622a2ea388470bd818e6b52db70b}{get\+Winner}} () const
+\begin{DoxyCompactList}\small\item\em Get the winner. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoVoteSystem_a69ae3c9259f874b6290e899d9be2f22e}{set\+Winner}} (const \mbox{\hyperlink{classCandidate}{Candidate}} \&winner\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the winner. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \mbox{\hyperlink{classPoVoteSystem_ad18d8f437ef4e5c0b604071c9f97ffd5}{get\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of Candidates in the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoVoteSystem_a383a6d2b057e0c4934b5a4f7583b3009}{set\+Candidates}} (const std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \&candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the list of Candidates in the election. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The voting system to conduct the election and determine a winning candidate. 
+
+to distribute the votes, the PO Vote System will use the ballot processing system associating with it.
+
+In the case of a tie, the PO Vote System will run the \mbox{\hyperlink{classTieBreaker}{Tie\+Breaker}} process and a winner will be chosen 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoVoteSystem_a1933a7808bb76ad01fec37fd3c3073eb}\label{classPoVoteSystem_a1933a7808bb76ad01fec37fd3c3073eb}} 
+\index{PoVoteSystem@{PoVoteSystem}!PoVoteSystem@{PoVoteSystem}}
+\index{PoVoteSystem@{PoVoteSystem}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{PoVoteSystem()}{PoVoteSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Po\+Vote\+System\+::\+Po\+Vote\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classPoVoteSystem}{Po\+Vote\+System}} object. 
+
+\mbox{\Hypertarget{classPoVoteSystem_a3f28b84751307083beeadc9963cc8fe7}\label{classPoVoteSystem_a3f28b84751307083beeadc9963cc8fe7}} 
+\index{PoVoteSystem@{PoVoteSystem}!PoVoteSystem@{PoVoteSystem}}
+\index{PoVoteSystem@{PoVoteSystem}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{PoVoteSystem()}{PoVoteSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Po\+Vote\+System\+::\+Po\+Vote\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$}]{ballot }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPoVoteSystem}{Po\+Vote\+System}} objec given the IR \mbox{\hyperlink{classBallot}{Ballot}} Processing system and the IR \mbox{\hyperlink{classBallot}{Ballot}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+System\+\_\+} & Po\+Processing$\ast$ the processing system used in order to process the PO \mbox{\hyperlink{classBallot}{Ballot}} \\
+\hline
+{\em ballot} & Po\+Ballot$\ast$ contains all the information to conduct the election \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoVoteSystem_a5c49e2ee470ddec04d773c333059f728}\label{classPoVoteSystem_a5c49e2ee470ddec04d773c333059f728}} 
+\index{PoVoteSystem@{PoVoteSystem}!conductElection@{conductElection}}
+\index{conductElection@{conductElection}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{conductElection()}{conductElection()}}
+{\footnotesize\ttfamily bool Po\+Vote\+System\+::conduct\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Helper function for \mbox{\hyperlink{classPoVoteSystem_a7230127b81095736613f4cffec93d487}{start\+Election()}} where it compares the percentage mapping and if there\textquotesingle{}s a majority winner. 
+
+\begin{DoxyReturn}{Returns}
+true if the winner has been decided 
+
+false if somehow the winner has not been decided 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIVotingSystem_a85ddb547cc9eed2b18e9a4dc7f20896d}{I\+Voting\+System}}.
+
+\mbox{\Hypertarget{classPoVoteSystem_ad18d8f437ef4e5c0b604071c9f97ffd5}\label{classPoVoteSystem_ad18d8f437ef4e5c0b604071c9f97ffd5}} 
+\index{PoVoteSystem@{PoVoteSystem}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCandidate}{Candidate}}$\ast$$>$ Po\+Vote\+System\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of Candidates in the election. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Candidate$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoVoteSystem_ad3c16ff187b003522232c7b4cf990f0d}\label{classPoVoteSystem_ad3c16ff187b003522232c7b4cf990f0d}} 
+\index{PoVoteSystem@{PoVoteSystem}!getProcessedBallot@{getProcessedBallot}}
+\index{getProcessedBallot@{getProcessedBallot}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getProcessedBallot()}{getProcessedBallot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoBallot}{Po\+Ballot}}$\ast$ Po\+Vote\+System\+::get\+Processed\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the information used for the vote election. 
+
+\begin{DoxyReturn}{Returns}
+Po\+Ballot$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoVoteSystem_aa636622a2ea388470bd818e6b52db70b}\label{classPoVoteSystem_aa636622a2ea388470bd818e6b52db70b}} 
+\index{PoVoteSystem@{PoVoteSystem}!getWinner@{getWinner}}
+\index{getWinner@{getWinner}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getWinner()}{getWinner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCandidate}{Candidate}} Po\+Vote\+System\+::get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the winner. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classCandidate}{Candidate}} the winner 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoVoteSystem_a383a6d2b057e0c4934b5a4f7583b3009}\label{classPoVoteSystem_a383a6d2b057e0c4934b5a4f7583b3009}} 
+\index{PoVoteSystem@{PoVoteSystem}!setCandidates@{setCandidates}}
+\index{setCandidates@{setCandidates}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{setCandidates()}{setCandidates()}}
+{\footnotesize\ttfamily void Po\+Vote\+System\+::set\+Candidates (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \&}]{candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of Candidates in the election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates\+\_\+} & vector$<$\+Candidate$\ast$$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoVoteSystem_a73599741ed1e1dc97c3b9765b4d219ce}\label{classPoVoteSystem_a73599741ed1e1dc97c3b9765b4d219ce}} 
+\index{PoVoteSystem@{PoVoteSystem}!setProcessedBallot@{setProcessedBallot}}
+\index{setProcessedBallot@{setProcessedBallot}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{setProcessedBallot()}{setProcessedBallot()}}
+{\footnotesize\ttfamily void Po\+Vote\+System\+::set\+Processed\+Ballot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoBallot}{Po\+Ballot}} $\ast$}]{processed\+Ballot\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the information used for the vote election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em processed\+Ballot\+\_\+} & Po\+Ballot$\ast$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoVoteSystem_a69ae3c9259f874b6290e899d9be2f22e}\label{classPoVoteSystem_a69ae3c9259f874b6290e899d9be2f22e}} 
+\index{PoVoteSystem@{PoVoteSystem}!setWinner@{setWinner}}
+\index{setWinner@{setWinner}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{setWinner()}{setWinner()}}
+{\footnotesize\ttfamily void Po\+Vote\+System\+::set\+Winner (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCandidate}{Candidate}} \&}]{winner\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the winner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner\+\_\+} & \mbox{\hyperlink{classCandidate}{Candidate}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoVoteSystem_a7230127b81095736613f4cffec93d487}\label{classPoVoteSystem_a7230127b81095736613f4cffec93d487}} 
+\index{PoVoteSystem@{PoVoteSystem}!startElection@{startElection}}
+\index{startElection@{startElection}!PoVoteSystem@{PoVoteSystem}}
+\doxysubsubsection{\texorpdfstring{startElection()}{startElection()}}
+{\footnotesize\ttfamily bool Po\+Vote\+System\+::start\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Start the election process and determine a winner. 
+
+\begin{DoxyReturn}{Returns}
+true if the winner has been decided 
+
+false if somehow the winner has not been decided 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIVotingSystem_a227a27e5ac833432513929470424f92d}{I\+Voting\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{PoVoteSystem_8h}{Po\+Vote\+System.\+h}}\item 
+src/Po\+Vote\+System.\+cpp\end{DoxyCompactItemize}

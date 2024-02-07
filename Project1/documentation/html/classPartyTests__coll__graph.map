@@ -1,0 +1,6 @@
+<map id="PartyTests" name="PartyTests">
+<area shape="rect" id="node1" title=" " alt="" coords="61,109,150,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,53,32"/>
+<area shape="rect" id="node3" href="$classParty.html" title="A class representing a political party with candidate information and seat limits." alt="" coords="77,5,133,32"/>
+<area shape="rect" id="node4" href="$classCandidate.html" title="An output class from the IBallotProcessing interface. This class holds objects/information for an ele..." alt="" coords="157,5,245,32"/>
+</map>

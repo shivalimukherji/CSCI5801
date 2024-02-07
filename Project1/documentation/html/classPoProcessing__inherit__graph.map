@@ -1,0 +1,4 @@
+<map id="PoProcessing" name="PoProcessing">
+<area shape="rect" id="node1" title="PO Processing is to process all ballots in a .csv file and prepare an organized set of information to..." alt="" coords="19,80,127,107"/>
+<area shape="rect" id="node2" href="$classIBallotProcessing.html" title=" " alt="" coords="5,5,140,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="IRProcessingTests" name="IRProcessingTests">
+<area shape="rect" id="node1" title=" " alt="" coords="32,285,171,312"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,196,53,223"/>
+<area shape="rect" id="node3" href="$classIRBallot.html" title="An output class from the IR Processing class. This class holds objects/information for the IR Vote Sy..." alt="" coords="63,145,137,172"/>
+<area shape="rect" id="node4" href="$classIVoteBallot.html" title="The abstract class where all VoteBallots are inherited from." alt="" coords="62,5,157,32"/>
+<area shape="rect" id="node6" href="$classIBallotProcessing.html" title=" " alt="" coords="175,95,310,121"/>
+<area shape="rect" id="node5" href="$classIRProcessing.html" title="IR Processing is to process all ballots in a .csv file and prepare an organized set of information to..." alt="" coords="189,196,294,223"/>
+<area shape="rect" id="node7" href="$classTableBuilder.html" title=" " alt="" coords="193,5,295,32"/>
+<area shape="rect" id="node8" href="$classAuditFile.html" title="The AuditFile class represents a file that logs information about a voting audit." alt="" coords="319,5,398,32"/>
+</map>

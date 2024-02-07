@@ -1,0 +1,4 @@
+<map id="PoBallot" name="PoBallot">
+<area shape="rect" id="node1" title="An output class from the Po Processing class. This class holds objects/information for the Po Vote Sy..." alt="" coords="15,80,91,107"/>
+<area shape="rect" id="node2" href="$classIVoteBallot.html" title="The abstract class where all VoteBallots are inherited from." alt="" coords="5,5,100,32"/>
+</map>

@@ -1,0 +1,179 @@
+\hypertarget{classTableBuilder}{}\doxysection{Table\+Builder Class Reference}
+\label{classTableBuilder}\index{TableBuilder@{TableBuilder}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTableBuilder_abe6d51af27262dd5b6026e6c47391352}{Table\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Table Builder object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableBuilder_afc5f19f1caa45ea3f74cbb8ba46c1f87}{build\+Row}} ()
+\begin{DoxyCompactList}\small\item\em Add a new row to the table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableBuilder_a4626cc2fdab4007def715a6bffbb4ca3}{add\+Cell}} (int row, std\+::string data)
+\begin{DoxyCompactList}\small\item\em Add a new cell at indicated row with data. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTableBuilder_a4f9262598d2a7adc76b9f68b9312d576}{get\+Cell}} (int row, int cell)
+\begin{DoxyCompactList}\small\item\em Get the Cell at desired row and cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableBuilder_afabe82355f105a61da3f7b58c135e74d}{set\+Cell}} (int row, int cell, std\+::string data)
+\begin{DoxyCompactList}\small\item\em Set the Cell at desired row and cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableBuilder_a7a92fdb6a1d4d44215835cd4ce997f7d}{build}} ()
+\begin{DoxyCompactList}\small\item\em Print out the table contents. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $\ast$ $>$ \mbox{\hyperlink{classTableBuilder_af5ba8d6b687533768f2302ae20ed4767}{get\+Rows}} () const
+\begin{DoxyCompactList}\small\item\em Get the Rows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableBuilder_af1175e17e0962377e0b351162d8ecf8b}{set\+Rows}} (const std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $\ast$ $>$ \&rows\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the Rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTableBuilder_adcfd4830045b8a0c47fb2def3959b980}{get\+Num\+Rows}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of rows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableBuilder_af48dacd7973570ed573c600ef73981c1}{set\+Num\+Rows}} (int num\+Rows\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the number of rows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTableBuilder_abe6d51af27262dd5b6026e6c47391352}\label{classTableBuilder_abe6d51af27262dd5b6026e6c47391352}} 
+\index{TableBuilder@{TableBuilder}!TableBuilder@{TableBuilder}}
+\index{TableBuilder@{TableBuilder}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{TableBuilder()}{TableBuilder()}}
+{\footnotesize\ttfamily Table\+Builder\+::\+Table\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new Table Builder object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTableBuilder_a4626cc2fdab4007def715a6bffbb4ca3}\label{classTableBuilder_a4626cc2fdab4007def715a6bffbb4ca3}} 
+\index{TableBuilder@{TableBuilder}!addCell@{addCell}}
+\index{addCell@{addCell}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{addCell()}{addCell()}}
+{\footnotesize\ttfamily void Table\+Builder\+::add\+Cell (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{std\+::string}]{data }\end{DoxyParamCaption})}
+
+
+
+Add a new cell at indicated row with data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & int \\
+\hline
+{\em data} & string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTableBuilder_a7a92fdb6a1d4d44215835cd4ce997f7d}\label{classTableBuilder_a7a92fdb6a1d4d44215835cd4ce997f7d}} 
+\index{TableBuilder@{TableBuilder}!build@{build}}
+\index{build@{build}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily void Table\+Builder\+::build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print out the table contents. 
+
+\mbox{\Hypertarget{classTableBuilder_afc5f19f1caa45ea3f74cbb8ba46c1f87}\label{classTableBuilder_afc5f19f1caa45ea3f74cbb8ba46c1f87}} 
+\index{TableBuilder@{TableBuilder}!buildRow@{buildRow}}
+\index{buildRow@{buildRow}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{buildRow()}{buildRow()}}
+{\footnotesize\ttfamily void Table\+Builder\+::build\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new row to the table. 
+
+\mbox{\Hypertarget{classTableBuilder_a4f9262598d2a7adc76b9f68b9312d576}\label{classTableBuilder_a4f9262598d2a7adc76b9f68b9312d576}} 
+\index{TableBuilder@{TableBuilder}!getCell@{getCell}}
+\index{getCell@{getCell}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{getCell()}{getCell()}}
+{\footnotesize\ttfamily std\+::string Table\+Builder\+::get\+Cell (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{cell }\end{DoxyParamCaption})}
+
+
+
+Get the Cell at desired row and cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & int \\
+\hline
+{\em cell} & int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTableBuilder_adcfd4830045b8a0c47fb2def3959b980}\label{classTableBuilder_adcfd4830045b8a0c47fb2def3959b980}} 
+\index{TableBuilder@{TableBuilder}!getNumRows@{getNumRows}}
+\index{getNumRows@{getNumRows}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{getNumRows()}{getNumRows()}}
+{\footnotesize\ttfamily int Table\+Builder\+::get\+Num\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of rows. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTableBuilder_af5ba8d6b687533768f2302ae20ed4767}\label{classTableBuilder_af5ba8d6b687533768f2302ae20ed4767}} 
+\index{TableBuilder@{TableBuilder}!getRows@{getRows}}
+\index{getRows@{getRows}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$std\+::string$>$$\ast$$>$ Table\+Builder\+::get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Rows. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::vector$<$std\+::string$>$$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTableBuilder_afabe82355f105a61da3f7b58c135e74d}\label{classTableBuilder_afabe82355f105a61da3f7b58c135e74d}} 
+\index{TableBuilder@{TableBuilder}!setCell@{setCell}}
+\index{setCell@{setCell}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{setCell()}{setCell()}}
+{\footnotesize\ttfamily void Table\+Builder\+::set\+Cell (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{cell,  }\item[{std\+::string}]{data }\end{DoxyParamCaption})}
+
+
+
+Set the Cell at desired row and cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & int \\
+\hline
+{\em cell} & int \\
+\hline
+{\em data} & string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTableBuilder_af48dacd7973570ed573c600ef73981c1}\label{classTableBuilder_af48dacd7973570ed573c600ef73981c1}} 
+\index{TableBuilder@{TableBuilder}!setNumRows@{setNumRows}}
+\index{setNumRows@{setNumRows}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{setNumRows()}{setNumRows()}}
+{\footnotesize\ttfamily void Table\+Builder\+::set\+Num\+Rows (\begin{DoxyParamCaption}\item[{int}]{num\+Rows\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the number of rows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Rows\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTableBuilder_af1175e17e0962377e0b351162d8ecf8b}\label{classTableBuilder_af1175e17e0962377e0b351162d8ecf8b}} 
+\index{TableBuilder@{TableBuilder}!setRows@{setRows}}
+\index{setRows@{setRows}!TableBuilder@{TableBuilder}}
+\doxysubsubsection{\texorpdfstring{setRows()}{setRows()}}
+{\footnotesize\ttfamily void Table\+Builder\+::set\+Rows (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $\ast$ $>$ \&}]{rows\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Rows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows\+\_\+} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{TableBuilder_8h}{Table\+Builder.\+h}}\item 
+src/Table\+Builder.\+cpp\end{DoxyCompactItemize}

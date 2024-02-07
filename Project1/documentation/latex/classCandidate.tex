@@ -1,0 +1,120 @@
+\hypertarget{classCandidate}{}\doxysection{Candidate Class Reference}
+\label{classCandidate}\index{Candidate@{Candidate}}
+
+
+An output class from the \mbox{\hyperlink{classIBallotProcessing}{I\+Ballot\+Processing}} interface. This class holds objects/information for an election \mbox{\hyperlink{classCandidate}{Candidate}} including their name and party. These attributes will then be displayed when a candidate wins eiher an IR or C\+PL election.  
+
+
+
+
+{\ttfamily \#include $<$Candidate.\+h$>$}
+
+
+
+Inheritance diagram for Candidate\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classCandidate__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCandidate_a753653df7d0342e5ac677f838ac7fd3c}\label{classCandidate_a753653df7d0342e5ac677f838ac7fd3c}} 
+{\bfseries Candidate} (string name, string party)
+\item 
+\mbox{\hyperlink{classCandidate_aff1e2d3b0e6880f892fc9c3321e9307b}{Candidate}} (string name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCandidate_a1ee7f62e1576e4959e3e50979ccd99b9}\label{classCandidate_a1ee7f62e1576e4959e3e50979ccd99b9}} 
+string {\bfseries get\+Name} ()
+\item 
+void \mbox{\hyperlink{classCandidate_a5ad7d5f6e2cd39edd8f5e8d2d4c853bf}{set\+Name}} (string name\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classCandidate}{Candidate}}\textquotesingle{}s name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCandidate_aa1c6b989747ddc4570891cf0f79a28f3}{get\+Party}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classCandidate}{Candidate}}\textquotesingle{}s party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_a3614cf4fe26dd2e5f53688b4d2351956}{set\+Party}} (string party\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classCandidate}{Candidate}}\textquotesingle{}s party. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCandidate_a86d68d981f6e953aa40fddba7c84ccb1}\label{classCandidate_a86d68d981f6e953aa40fddba7c84ccb1}} 
+string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classCandidate_a3722023440767ad1b8ebbe1a4cacab63}\label{classCandidate_a3722023440767ad1b8ebbe1a4cacab63}} 
+string {\bfseries party}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An output class from the \mbox{\hyperlink{classIBallotProcessing}{I\+Ballot\+Processing}} interface. This class holds objects/information for an election \mbox{\hyperlink{classCandidate}{Candidate}} including their name and party. These attributes will then be displayed when a candidate wins eiher an IR or C\+PL election. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCandidate_aff1e2d3b0e6880f892fc9c3321e9307b}\label{classCandidate_aff1e2d3b0e6880f892fc9c3321e9307b}} 
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{Candidate()}{Candidate()}}
+{\footnotesize\ttfamily Candidate\+::\+Candidate (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a string argument for name of \mbox{\hyperlink{classCandidate}{Candidate}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCandidate_aa1c6b989747ddc4570891cf0f79a28f3}\label{classCandidate_aa1c6b989747ddc4570891cf0f79a28f3}} 
+\index{Candidate@{Candidate}!getParty@{getParty}}
+\index{getParty@{getParty}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getParty()}{getParty()}}
+{\footnotesize\ttfamily string Candidate\+::get\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \mbox{\hyperlink{classCandidate}{Candidate}}\textquotesingle{}s party. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a5ad7d5f6e2cd39edd8f5e8d2d4c853bf}\label{classCandidate_a5ad7d5f6e2cd39edd8f5e8d2d4c853bf}} 
+\index{Candidate@{Candidate}!setName@{setName}}
+\index{setName@{setName}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Candidate\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the \mbox{\hyperlink{classCandidate}{Candidate}}\textquotesingle{}s name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCandidate_a3614cf4fe26dd2e5f53688b4d2351956}\label{classCandidate_a3614cf4fe26dd2e5f53688b4d2351956}} 
+\index{Candidate@{Candidate}!setParty@{setParty}}
+\index{setParty@{setParty}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{setParty()}{setParty()}}
+{\footnotesize\ttfamily void Candidate\+::set\+Party (\begin{DoxyParamCaption}\item[{string}]{party\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the \mbox{\hyperlink{classCandidate}{Candidate}}\textquotesingle{}s party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/Candidate.\+h\item 
+src/Candidate.\+cpp\end{DoxyCompactItemize}

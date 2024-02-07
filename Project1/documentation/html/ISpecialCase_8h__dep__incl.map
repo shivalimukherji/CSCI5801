@@ -1,0 +1,10 @@
+<map id="src/include/ISpecialCase.h" name="src/include/ISpecialCase.h">
+<area shape="rect" id="node1" title="This is the header file for the ISpecialCase abstract class which defines the interface for special c..." alt="" coords="473,5,663,32"/>
+<area shape="rect" id="node2" href="$IVotingSystem_8h.html" title=" " alt="" coords="237,80,440,107"/>
+<area shape="rect" id="node7" href="$PopularityCase_8h.html" title=" " alt="" coords="465,80,671,107"/>
+<area shape="rect" id="node8" href="$TieBreaker_8h_source.html" title=" " alt="" coords="695,80,873,107"/>
+<area shape="rect" id="node3" href="$CPLVoteSystem_8h.html" title="Conduct election and show winners." alt="" coords="5,155,216,181"/>
+<area shape="rect" id="node5" href="$IRVoteSystem_8h.html" title=" " alt="" coords="239,155,438,181"/>
+<area shape="rect" id="node6" href="$PoVoteSystem_8h.html" title=" " alt="" coords="463,155,665,181"/>
+<area shape="rect" id="node4" href="$CPLVoteSystem_8cpp.html" title="Conduct election according to CPL rules and show the winners." alt="" coords="23,229,198,256"/>
+</map>

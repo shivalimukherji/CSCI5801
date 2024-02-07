@@ -1,0 +1,9 @@
+<map id="CPLProcessingTests" name="CPLProcessingTests">
+<area shape="rect" id="node1" title=" " alt="" coords="16,273,165,300"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,184,53,211"/>
+<area shape="rect" id="node3" href="$classAuditFile.html" title="The AuditFile class represents a file that logs information about a voting audit." alt="" coords="53,5,131,32"/>
+<area shape="rect" id="node5" href="$classIBallotProcessing.html" title=" " alt="" coords="131,95,266,121"/>
+<area shape="rect" id="node4" href="$classCPLProcessing.html" title=" " alt="" coords="133,184,249,211"/>
+<area shape="rect" id="node6" href="$classIVoteBallot.html" title="The abstract class where all VoteBallots are inherited from." alt="" coords="155,5,250,32"/>
+<area shape="rect" id="node7" href="$classTableBuilder.html" title=" " alt="" coords="274,5,377,32"/>
+</map>

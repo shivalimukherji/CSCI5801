@@ -1,0 +1,431 @@
+\hypertarget{classIRProcessing}{}\doxysection{I\+R\+Processing Class Reference}
+\label{classIRProcessing}\index{IRProcessing@{IRProcessing}}
+
+
+IR Processing is to process all ballots in a .csv file and prepare an organized set of information to send to the \mbox{\hyperlink{classIRVoteSystem}{I\+R\+Vote\+System}} class, conducting and determining the winner.  
+
+
+
+
+{\ttfamily \#include $<$I\+R\+Processing.\+h$>$}
+
+
+
+Inheritance diagram for I\+R\+Processing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classIRProcessing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+R\+Processing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classIRProcessing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIRProcessing_afa0dce054120e3f696678c0d26dee9a0}{I\+R\+Processing}} (F\+I\+LE $\ast$file\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIRProcessing_a6587d28c9e2ae9c82992218145cbe881}{I\+R\+Processing}} (F\+I\+LE $\ast$file\+\_\+, std\+::vector$<$ std\+::string $>$ files\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIRProcessing_a659d0ff82353f78277c16d8e932dbb3d}{I\+R\+Processing}} (\mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} object given the \mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} (A class containing the organized information to send to vote election). \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{classIRProcessing_ab994ab3f2c5672da727df227801e301b}{next\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Helper function to read the next line and return the contente seperated by \textquotesingle{},\textquotesingle{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIRProcessing_a673b9307786888632e25cb9258c2f2f8}{set\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Overall function to control reading the header informations of multiple files and redistributing approriate ballots. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIRProcessing_a6c2fd33f9c707abb9c97c0a3127a42cb}{read\+Header}} (int multiple)
+\begin{DoxyCompactList}\small\item\em Function to read the header parts of the .csv file and fill out the necessarily information. Does not read the ballots in the .csv file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIRProcessing_a1d34f7e59abd5a8d64c7aa0d7d1adf6c}{read}} ()
+\begin{DoxyCompactList}\small\item\em Function to read all the ballots in the .csv and distribute to each candidate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$ \mbox{\hyperlink{classIRProcessing_ad72b84fdaf1c4074066a93e210dcd956}{output}} ()
+\begin{DoxyCompactList}\small\item\em Create an object holding required information for the voting election in order to conduct. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIRProcessing_a672984c6c54eb011d5444d84828be656}\label{classIRProcessing_a672984c6c54eb011d5444d84828be656}} 
+void \mbox{\hyperlink{classIRProcessing_a672984c6c54eb011d5444d84828be656}{calculate}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the map percentage. Each candidate\textquotesingle{}s number of ballots is divided by the total ballots found in the .csv file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIRProcessing_afa727e9301af9786e225930476e2ef60}{redistribute}} (\mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$cand)
+\begin{DoxyCompactList}\small\item\em Function to remove all the ballots in a eliminated candidate and distribute the ballot to the next preference candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_a1034a9c10ae04e1b927d98dc479c6559}{table\+Setup}} ()
+\begin{DoxyCompactList}\small\item\em Function to setup the table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_a57d7a630dff628cdcb67ae8a39d681e0}{table\+Round0}} ()
+\begin{DoxyCompactList}\small\item\em Function to populate the table from Round0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_a26c89d1a231afb831a11da8d65f5c3e3}{redistribute\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Function to update table when redistribution occurs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_a3f11c9f7f6703019e9019836e7354d00}{generate\+Table\+Round}} ()
+\begin{DoxyCompactList}\small\item\em Function to expand table when there\textquotesingle{}s a distribution round. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIRProcessing_ad97f46101a94ccf22466ae80b93f4135}{get\+Num\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of candidates left in election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_aac7b7fd2f0df551a80366a80a6364e39}{set\+Num\+Candidates}} (int num\+Candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the number of candidates left in election. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \mbox{\hyperlink{classIRProcessing_a4b59de7686bf2fbd9cd10159752ce9e2}{get\+Candidates}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of I\+R\+Candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_a27845d21eed8f9c9915f11e7627a12ec}{set\+Candidates}} (const std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \&candidates\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the list of I\+R\+Candidates. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classIRProcessing_a0a5acbed40ea9b4312806b41f262c714}{get\+Map\+Percentage}} () const
+\begin{DoxyCompactList}\small\item\em Get the mapping of percentage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_a04151f84014b669c6378c3e49d06f531}{set\+Map\+Percentage}} (const std\+::vector$<$ double $>$ \&map\+Percentage\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the percentage mapping. \end{DoxyCompactList}\item 
+std\+::vector$<$ string $>$ \mbox{\hyperlink{classIRProcessing_a75cd113363727a6119337793a58bb45f}{get\+Files}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of inputted files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_a0c120727556ad1299d4840b7b03c7f78}{set\+Files}} (const std\+::vector$<$ string $>$ \&files\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the list of inputted files. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIRProcessing_a8f2a71a356db919c843a64447cfd1d1e}{get\+Round}} () const
+\begin{DoxyCompactList}\small\item\em Get the current round. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRProcessing_aa1ed26a4f8157cf2f82fe77421252d1b}{set\+Round}} (int round\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the current round. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+IR Processing is to process all ballots in a .csv file and prepare an organized set of information to send to the \mbox{\hyperlink{classIRVoteSystem}{I\+R\+Vote\+System}} class, conducting and determining the winner. 
+
+T\+He processing will also handle redistribution if a candidate is eliminated. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIRProcessing_afa0dce054120e3f696678c0d26dee9a0}\label{classIRProcessing_afa0dce054120e3f696678c0d26dee9a0}} 
+\index{IRProcessing@{IRProcessing}!IRProcessing@{IRProcessing}}
+\index{IRProcessing@{IRProcessing}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{IRProcessing()}{IRProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily I\+R\+Processing\+::\+I\+R\+Processing (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & F\+I\+LE (the .csv file) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRProcessing_a6587d28c9e2ae9c82992218145cbe881}\label{classIRProcessing_a6587d28c9e2ae9c82992218145cbe881}} 
+\index{IRProcessing@{IRProcessing}!IRProcessing@{IRProcessing}}
+\index{IRProcessing@{IRProcessing}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{IRProcessing()}{IRProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily I\+R\+Processing\+::\+I\+R\+Processing (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file\+\_\+,  }\item[{std\+::vector$<$ std\+::string $>$}]{files\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+} & The F\+I\+LE object (the first one) \\
+\hline
+{\em files\+\_\+} & List of all the files inputted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRProcessing_a659d0ff82353f78277c16d8e932dbb3d}\label{classIRProcessing_a659d0ff82353f78277c16d8e932dbb3d}} 
+\index{IRProcessing@{IRProcessing}!IRProcessing@{IRProcessing}}
+\index{IRProcessing@{IRProcessing}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{IRProcessing()}{IRProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily I\+R\+Processing\+::\+I\+R\+Processing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$}]{ballot\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classIRProcessing}{I\+R\+Processing}} object given the \mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} (A class containing the organized information to send to vote election). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot} & I\+R\+Ballot$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIRProcessing_a3f11c9f7f6703019e9019836e7354d00}\label{classIRProcessing_a3f11c9f7f6703019e9019836e7354d00}} 
+\index{IRProcessing@{IRProcessing}!generateTableRound@{generateTableRound}}
+\index{generateTableRound@{generateTableRound}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{generateTableRound()}{generateTableRound()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::generate\+Table\+Round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to expand table when there\textquotesingle{}s a distribution round. 
+
+\mbox{\Hypertarget{classIRProcessing_a4b59de7686bf2fbd9cd10159752ce9e2}\label{classIRProcessing_a4b59de7686bf2fbd9cd10159752ce9e2}} 
+\index{IRProcessing@{IRProcessing}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}}$\ast$$>$ I\+R\+Processing\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of I\+R\+Candidates. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+I\+R\+Candidate$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRProcessing_a75cd113363727a6119337793a58bb45f}\label{classIRProcessing_a75cd113363727a6119337793a58bb45f}} 
+\index{IRProcessing@{IRProcessing}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$string$>$ I\+R\+Processing\+::get\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the list of inputted files. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$string$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRProcessing_a0a5acbed40ea9b4312806b41f262c714}\label{classIRProcessing_a0a5acbed40ea9b4312806b41f262c714}} 
+\index{IRProcessing@{IRProcessing}!getMapPercentage@{getMapPercentage}}
+\index{getMapPercentage@{getMapPercentage}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{getMapPercentage()}{getMapPercentage()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ I\+R\+Processing\+::get\+Map\+Percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the mapping of percentage. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$double$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRProcessing_ad97f46101a94ccf22466ae80b93f4135}\label{classIRProcessing_ad97f46101a94ccf22466ae80b93f4135}} 
+\index{IRProcessing@{IRProcessing}!getNumCandidates@{getNumCandidates}}
+\index{getNumCandidates@{getNumCandidates}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{getNumCandidates()}{getNumCandidates()}}
+{\footnotesize\ttfamily int I\+R\+Processing\+::get\+Num\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of candidates left in election. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRProcessing_a8f2a71a356db919c843a64447cfd1d1e}\label{classIRProcessing_a8f2a71a356db919c843a64447cfd1d1e}} 
+\index{IRProcessing@{IRProcessing}!getRound@{getRound}}
+\index{getRound@{getRound}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{getRound()}{getRound()}}
+{\footnotesize\ttfamily int I\+R\+Processing\+::get\+Round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the current round. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRProcessing_ab994ab3f2c5672da727df227801e301b}\label{classIRProcessing_ab994ab3f2c5672da727df227801e301b}} 
+\index{IRProcessing@{IRProcessing}!nextLine@{nextLine}}
+\index{nextLine@{nextLine}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{nextLine()}{nextLine()}}
+{\footnotesize\ttfamily char $\ast$ I\+R\+Processing\+::next\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Helper function to read the next line and return the contente seperated by \textquotesingle{},\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+char$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRProcessing_ad72b84fdaf1c4074066a93e210dcd956}\label{classIRProcessing_ad72b84fdaf1c4074066a93e210dcd956}} 
+\index{IRProcessing@{IRProcessing}!output@{output}}
+\index{output@{output}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIRBallot}{I\+R\+Ballot}} $\ast$ I\+R\+Processing\+::output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Create an object holding required information for the voting election in order to conduct. 
+
+\begin{DoxyReturn}{Returns}
+I\+R\+Ballot$\ast$ the class containing information. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a339b858b8031e167da82adab2a59024f}{I\+Ballot\+Processing}}.
+
+\mbox{\Hypertarget{classIRProcessing_a1d34f7e59abd5a8d64c7aa0d7d1adf6c}\label{classIRProcessing_a1d34f7e59abd5a8d64c7aa0d7d1adf6c}} 
+\index{IRProcessing@{IRProcessing}!read@{read}}
+\index{read@{read}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily bool I\+R\+Processing\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function to read all the ballots in the .csv and distribute to each candidate. 
+
+\begin{DoxyReturn}{Returns}
+true if the reading was sucessful 
+
+false if the reading failed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a7a453ce6dcb22bc4fac5838b10fac1d9}{I\+Ballot\+Processing}}.
+
+\mbox{\Hypertarget{classIRProcessing_a6c2fd33f9c707abb9c97c0a3127a42cb}\label{classIRProcessing_a6c2fd33f9c707abb9c97c0a3127a42cb}} 
+\index{IRProcessing@{IRProcessing}!readHeader@{readHeader}}
+\index{readHeader@{readHeader}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{readHeader()}{readHeader()}}
+{\footnotesize\ttfamily bool I\+R\+Processing\+::read\+Header (\begin{DoxyParamCaption}\item[{int}]{multiple }\end{DoxyParamCaption})}
+
+
+
+Function to read the header parts of the .csv file and fill out the necessarily information. Does not read the ballots in the .csv file. 
+
+\begin{DoxyReturn}{Returns}
+true if the set up was suceessful 
+
+false if the set up fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRProcessing_afa727e9301af9786e225930476e2ef60}\label{classIRProcessing_afa727e9301af9786e225930476e2ef60}} 
+\index{IRProcessing@{IRProcessing}!redistribute@{redistribute}}
+\index{redistribute@{redistribute}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{redistribute()}{redistribute()}}
+{\footnotesize\ttfamily bool I\+R\+Processing\+::redistribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$}]{cand }\end{DoxyParamCaption})}
+
+
+
+Function to remove all the ballots in a eliminated candidate and distribute the ballot to the next preference candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cand} & I\+R\+Candidate$\ast$ the eliminated candidate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if redistribution was sucessful. 
+
+false if an error has occured. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRProcessing_a26c89d1a231afb831a11da8d65f5c3e3}\label{classIRProcessing_a26c89d1a231afb831a11da8d65f5c3e3}} 
+\index{IRProcessing@{IRProcessing}!redistributeTable@{redistributeTable}}
+\index{redistributeTable@{redistributeTable}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{redistributeTable()}{redistributeTable()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::redistribute\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to update table when redistribution occurs. 
+
+\mbox{\Hypertarget{classIRProcessing_a27845d21eed8f9c9915f11e7627a12ec}\label{classIRProcessing_a27845d21eed8f9c9915f11e7627a12ec}} 
+\index{IRProcessing@{IRProcessing}!setCandidates@{setCandidates}}
+\index{setCandidates@{setCandidates}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{setCandidates()}{setCandidates()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::set\+Candidates (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} $\ast$ $>$ \&}]{candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of I\+R\+Candidates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates\+\_\+} & vector$<$\+I\+R\+Candidate$\ast$$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRProcessing_a0c120727556ad1299d4840b7b03c7f78}\label{classIRProcessing_a0c120727556ad1299d4840b7b03c7f78}} 
+\index{IRProcessing@{IRProcessing}!setFiles@{setFiles}}
+\index{setFiles@{setFiles}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{setFiles()}{setFiles()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::set\+Files (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ string $>$ \&}]{files\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the list of inputted files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em files\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRProcessing_a04151f84014b669c6378c3e49d06f531}\label{classIRProcessing_a04151f84014b669c6378c3e49d06f531}} 
+\index{IRProcessing@{IRProcessing}!setMapPercentage@{setMapPercentage}}
+\index{setMapPercentage@{setMapPercentage}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{setMapPercentage()}{setMapPercentage()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::set\+Map\+Percentage (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{map\+Percentage\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the percentage mapping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Percentage\+\_\+} & vector$<$double$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRProcessing_aac7b7fd2f0df551a80366a80a6364e39}\label{classIRProcessing_aac7b7fd2f0df551a80366a80a6364e39}} 
+\index{IRProcessing@{IRProcessing}!setNumCandidates@{setNumCandidates}}
+\index{setNumCandidates@{setNumCandidates}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{setNumCandidates()}{setNumCandidates()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::set\+Num\+Candidates (\begin{DoxyParamCaption}\item[{int}]{num\+Candidates\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the number of candidates left in election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Candidates\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRProcessing_aa1ed26a4f8157cf2f82fe77421252d1b}\label{classIRProcessing_aa1ed26a4f8157cf2f82fe77421252d1b}} 
+\index{IRProcessing@{IRProcessing}!setRound@{setRound}}
+\index{setRound@{setRound}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{setRound()}{setRound()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::set\+Round (\begin{DoxyParamCaption}\item[{int}]{round\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the current round. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em round\+\_\+} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRProcessing_a673b9307786888632e25cb9258c2f2f8}\label{classIRProcessing_a673b9307786888632e25cb9258c2f2f8}} 
+\index{IRProcessing@{IRProcessing}!setUp@{setUp}}
+\index{setUp@{setUp}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily bool I\+R\+Processing\+::set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overall function to control reading the header informations of multiple files and redistributing approriate ballots. 
+
+\begin{DoxyReturn}{Returns}
+true if the set up was suceessful 
+
+false if the set up fail 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a3eb01b2f1102ff4e0bdb4b99ab40c45d}{I\+Ballot\+Processing}}.
+
+\mbox{\Hypertarget{classIRProcessing_a57d7a630dff628cdcb67ae8a39d681e0}\label{classIRProcessing_a57d7a630dff628cdcb67ae8a39d681e0}} 
+\index{IRProcessing@{IRProcessing}!tableRound0@{tableRound0}}
+\index{tableRound0@{tableRound0}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{tableRound0()}{tableRound0()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::table\+Round0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to populate the table from Round0. 
+
+\mbox{\Hypertarget{classIRProcessing_a1034a9c10ae04e1b927d98dc479c6559}\label{classIRProcessing_a1034a9c10ae04e1b927d98dc479c6559}} 
+\index{IRProcessing@{IRProcessing}!tableSetup@{tableSetup}}
+\index{tableSetup@{tableSetup}!IRProcessing@{IRProcessing}}
+\doxysubsubsection{\texorpdfstring{tableSetup()}{tableSetup()}}
+{\footnotesize\ttfamily void I\+R\+Processing\+::table\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to setup the table. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{IRProcessing_8h}{I\+R\+Processing.\+h}}\item 
+src/I\+R\+Processing.\+cpp\end{DoxyCompactItemize}

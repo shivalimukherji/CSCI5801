@@ -1,0 +1,35 @@
+Matin Horri, Wenjiang Jiang, Shivali Mukherji, and Michael Vang\hypertarget{md_README_autotoc_md1}{}\doxysection{Get started}\label{md_README_autotoc_md1}
+Run the following commands\+:
+
+cd Project1 ~\newline
+ make main\+All ~\newline
+ ./main or ./main $<$.csv files$>$
+
+The program will prompt user to enter a command. Enter \char`\"{}read\char`\"{}.
+
+Then, it will prompt user to enter csv files. The user can either enter just one, or multiple at once. Enter \char`\"{}testing/data/\+I\+R.\+csv\char`\"{} for IR election or \char`\"{}testing/data/\+C\+P\+L.\+csv\char`\"{} for C\+PL election.
+
+If the user enters just one file following the read command, the program will prompt the user again and ask if there are any other files they want to enter. The user can enter another csv file or enter no into the command line.
+
+If the user enters no, the program will process the files and run the election.
+
+The election process and the winners will be displayed.\hypertarget{md_README_autotoc_md2}{}\doxysection{Unit Testing}\label{md_README_autotoc_md2}
+Option 1\+: ~\newline
+ mkdir build ~\newline
+ cd build ~\newline
+ cmake ../ ~\newline
+ make ~\newline
+ cd tesing/test ~\newline
+ ./\+All\+Tests ~\newline
+
+
+Option 2\+: ~\newline
+ cmake -\/S . -\/B build ~\newline
+ cmake --build build ~\newline
+ cd build \&\& ctest ~\newline
+
+
+If ctest fails, do the following in the build folder\+: ~\newline
+ ctest -\/C debug --verbose ~\newline
+\hypertarget{md_README_autotoc_md3}{}\doxysection{Current Issues}\label{md_README_autotoc_md3}
+Buglists contain the current issue. Currently on Linux side, there is an error on parsing the \mbox{\hyperlink{classCandidate}{Candidate}}\textquotesingle{}s name. This can be seen in testing/data/\+I\+R3.\+csv and testing/data/\+I\+R4.\+csv. The program works intended on Windows \& Mac side. 

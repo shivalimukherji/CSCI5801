@@ -1,0 +1,153 @@
+\hypertarget{classCPLProcessing}{}\doxysection{C\+P\+L\+Processing Class Reference}
+\label{classCPLProcessing}\index{CPLProcessing@{CPLProcessing}}
+
+
+Inheritance diagram for C\+P\+L\+Processing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classCPLProcessing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+P\+L\+Processing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classCPLProcessing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCPLProcessing_a4e353a07c25f2d6d7aa4e81663f5ff21}{C\+P\+L\+Processing}} (F\+I\+LE $\ast$file\+\_\+)
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classCPLProcessing}{C\+P\+L\+Processing}} with an input file C\+PL election. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPLProcessing_ae43d7e78f8662a45224805af8f5dc68b}\label{classCPLProcessing_ae43d7e78f8662a45224805af8f5dc68b}} 
+{\bfseries C\+P\+L\+Processing} (F\+I\+LE $\ast$file\+\_\+, std\+::vector$<$ std\+::string $>$ files\+\_\+)
+\item 
+\mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}} $\ast$ \mbox{\hyperlink{classCPLProcessing_aa3bf172d820141263c1d90db82bc12b2}{output}} ()
+\begin{DoxyCompactList}\small\item\em Output a \mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}} that contains all ballot information. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCPLProcessing_af0b79fc6169efef9250ed3d18a0de8a0}{read}} ()
+\begin{DoxyCompactList}\small\item\em Start to read files/. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCPLProcessing_a6f579708d0544e77daf57a7d7f958cc6}{set\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Parse files and save ballot infomration/. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCPLProcessing_a918dd373084da5c6e8c772d1f72d59a7}{read\+Header}} (int multiple)
+\begin{DoxyCompactList}\small\item\em Read header information of input file and check consistency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCPLProcessing_a4e353a07c25f2d6d7aa4e81663f5ff21}\label{classCPLProcessing_a4e353a07c25f2d6d7aa4e81663f5ff21}} 
+\index{CPLProcessing@{CPLProcessing}!CPLProcessing@{CPLProcessing}}
+\index{CPLProcessing@{CPLProcessing}!CPLProcessing@{CPLProcessing}}
+\doxysubsubsection{\texorpdfstring{CPLProcessing()}{CPLProcessing()}}
+{\footnotesize\ttfamily C\+P\+L\+Processing\+::\+C\+P\+L\+Processing (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{classCPLProcessing}{C\+P\+L\+Processing}} with an input file C\+PL election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+} & C\+PL ballot file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPLProcessing_aa3bf172d820141263c1d90db82bc12b2}\label{classCPLProcessing_aa3bf172d820141263c1d90db82bc12b2}} 
+\index{CPLProcessing@{CPLProcessing}!output@{output}}
+\index{output@{output}!CPLProcessing@{CPLProcessing}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}} $\ast$ C\+P\+L\+Processing\+::output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Output a \mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}} that contains all ballot information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+C\+P\+L\+Vote\+Ballot$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a339b858b8031e167da82adab2a59024f}{I\+Ballot\+Processing}}.
+
+\mbox{\Hypertarget{classCPLProcessing_af0b79fc6169efef9250ed3d18a0de8a0}\label{classCPLProcessing_af0b79fc6169efef9250ed3d18a0de8a0}} 
+\index{CPLProcessing@{CPLProcessing}!read@{read}}
+\index{read@{read}!CPLProcessing@{CPLProcessing}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily bool C\+P\+L\+Processing\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Start to read files/. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a7a453ce6dcb22bc4fac5838b10fac1d9}{I\+Ballot\+Processing}}.
+
+\mbox{\Hypertarget{classCPLProcessing_a918dd373084da5c6e8c772d1f72d59a7}\label{classCPLProcessing_a918dd373084da5c6e8c772d1f72d59a7}} 
+\index{CPLProcessing@{CPLProcessing}!readHeader@{readHeader}}
+\index{readHeader@{readHeader}!CPLProcessing@{CPLProcessing}}
+\doxysubsubsection{\texorpdfstring{readHeader()}{readHeader()}}
+{\footnotesize\ttfamily bool C\+P\+L\+Processing\+::read\+Header (\begin{DoxyParamCaption}\item[{int}]{multiple }\end{DoxyParamCaption})}
+
+
+
+Read header information of input file and check consistency. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em multiple} & If the input file is an additional file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLProcessing_a6f579708d0544e77daf57a7d7f958cc6}\label{classCPLProcessing_a6f579708d0544e77daf57a7d7f958cc6}} 
+\index{CPLProcessing@{CPLProcessing}!setUp@{setUp}}
+\index{setUp@{setUp}!CPLProcessing@{CPLProcessing}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily bool C\+P\+L\+Processing\+::set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse files and save ballot infomration/. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBallotProcessing_a3eb01b2f1102ff4e0bdb4b99ab40c45d}{I\+Ballot\+Processing}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{CPLProcessing_8h}{C\+P\+L\+Processing.\+h}}\item 
+src/\mbox{\hyperlink{CPLProcessing_8cpp}{C\+P\+L\+Processing.\+cpp}}\end{DoxyCompactItemize}

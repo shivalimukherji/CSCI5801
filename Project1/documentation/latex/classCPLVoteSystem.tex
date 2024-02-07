@@ -1,0 +1,166 @@
+\hypertarget{classCPLVoteSystem}{}\doxysection{C\+P\+L\+Vote\+System Class Reference}
+\label{classCPLVoteSystem}\index{CPLVoteSystem@{CPLVoteSystem}}
+
+
+Inheritance diagram for C\+P\+L\+Vote\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classCPLVoteSystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+P\+L\+Vote\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classCPLVoteSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCPLVoteSystem_ab699e8d39257b58cebc87208233463ac}{C\+P\+L\+Vote\+System}} (\mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}} $\ast$\mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}})
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classCPLVoteSystem}{C\+P\+L\+Vote\+System}} with an input \mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCPLVoteSystem_a791a6dbdb7b919ed2a30f40276c7cd4b}{start\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Start election with checking the information ballots of each party. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCPLVoteSystem_a233e5ce1322f82dfcb5573e16c44791a}{conduct\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Conduct election according to C\+PL rules. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPLVoteSystem_a57fb0f7f8f242a183dc70090eb9d0a91}{get\+Remain\+Seat}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of unassigned seasts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPLVoteSystem_a72817142dbe6909cc95c013dd863332a}{C\+P\+L\+Lottery}} (int parties\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Draw lottery for unassigned seats. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classCPLVoteSystem_aaccac676d263048b4f5c6a19c22e5bb8}{get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em Get the winners in each party. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCPLVoteSystem_ab699e8d39257b58cebc87208233463ac}\label{classCPLVoteSystem_ab699e8d39257b58cebc87208233463ac}} 
+\index{CPLVoteSystem@{CPLVoteSystem}!CPLVoteSystem@{CPLVoteSystem}}
+\index{CPLVoteSystem@{CPLVoteSystem}!CPLVoteSystem@{CPLVoteSystem}}
+\doxysubsubsection{\texorpdfstring{CPLVoteSystem()}{CPLVoteSystem()}}
+{\footnotesize\ttfamily C\+P\+L\+Vote\+System\+::\+C\+P\+L\+Vote\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}} $\ast$}]{C\+P\+L\+Vote\+Ballot }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{classCPLVoteSystem}{C\+P\+L\+Vote\+System}} with an input \mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em incoming\+Ballot} & C\+PL ballot file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPLVoteSystem_a233e5ce1322f82dfcb5573e16c44791a}\label{classCPLVoteSystem_a233e5ce1322f82dfcb5573e16c44791a}} 
+\index{CPLVoteSystem@{CPLVoteSystem}!conductElection@{conductElection}}
+\index{conductElection@{conductElection}!CPLVoteSystem@{CPLVoteSystem}}
+\doxysubsubsection{\texorpdfstring{conductElection()}{conductElection()}}
+{\footnotesize\ttfamily bool C\+P\+L\+Vote\+System\+::conduct\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Conduct election according to C\+PL rules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIVotingSystem_a85ddb547cc9eed2b18e9a4dc7f20896d}{I\+Voting\+System}}.
+
+\mbox{\Hypertarget{classCPLVoteSystem_a72817142dbe6909cc95c013dd863332a}\label{classCPLVoteSystem_a72817142dbe6909cc95c013dd863332a}} 
+\index{CPLVoteSystem@{CPLVoteSystem}!CPLLottery@{CPLLottery}}
+\index{CPLLottery@{CPLLottery}!CPLVoteSystem@{CPLVoteSystem}}
+\doxysubsubsection{\texorpdfstring{CPLLottery()}{CPLLottery()}}
+{\footnotesize\ttfamily int C\+P\+L\+Vote\+System\+::\+C\+P\+L\+Lottery (\begin{DoxyParamCaption}\item[{int}]{parties\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Draw lottery for unassigned seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parties\+\_\+size} & Number of parties that can be assigned a seat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteSystem_a57fb0f7f8f242a183dc70090eb9d0a91}\label{classCPLVoteSystem_a57fb0f7f8f242a183dc70090eb9d0a91}} 
+\index{CPLVoteSystem@{CPLVoteSystem}!getRemainSeat@{getRemainSeat}}
+\index{getRemainSeat@{getRemainSeat}!CPLVoteSystem@{CPLVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getRemainSeat()}{getRemainSeat()}}
+{\footnotesize\ttfamily int C\+P\+L\+Vote\+System\+::get\+Remain\+Seat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of unassigned seasts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteSystem_aaccac676d263048b4f5c6a19c22e5bb8}\label{classCPLVoteSystem_aaccac676d263048b4f5c6a19c22e5bb8}} 
+\index{CPLVoteSystem@{CPLVoteSystem}!getWinner@{getWinner}}
+\index{getWinner@{getWinner}!CPLVoteSystem@{CPLVoteSystem}}
+\doxysubsubsection{\texorpdfstring{getWinner()}{getWinner()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCandidate}{Candidate}}$>$ C\+P\+L\+Vote\+System\+::get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the winners in each party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Candidate$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteSystem_a791a6dbdb7b919ed2a30f40276c7cd4b}\label{classCPLVoteSystem_a791a6dbdb7b919ed2a30f40276c7cd4b}} 
+\index{CPLVoteSystem@{CPLVoteSystem}!startElection@{startElection}}
+\index{startElection@{startElection}!CPLVoteSystem@{CPLVoteSystem}}
+\doxysubsubsection{\texorpdfstring{startElection()}{startElection()}}
+{\footnotesize\ttfamily bool C\+P\+L\+Vote\+System\+::start\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Start election with checking the information ballots of each party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIVotingSystem_a227a27e5ac833432513929470424f92d}{I\+Voting\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{CPLVoteSystem_8h}{C\+P\+L\+Vote\+System.\+h}}\item 
+src/\mbox{\hyperlink{CPLVoteSystem_8cpp}{C\+P\+L\+Vote\+System.\+cpp}}\end{DoxyCompactItemize}

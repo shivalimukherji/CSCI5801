@@ -1,0 +1,10 @@
+<map id="src/include/TableBuilder.h" name="src/include/TableBuilder.h">
+<area shape="rect" id="node1" title=" " alt="" coords="234,5,422,32"/>
+<area shape="rect" id="node2" href="$IBallotProcessing_8h.html" title=" " alt="" coords="218,80,438,107"/>
+<area shape="rect" id="node3" href="$CPLProcessing_8h.html" title="Process CPL ballot file and save the information of parties, candidates and seats." alt="" coords="5,155,208,181"/>
+<area shape="rect" id="node5" href="$IRProcessing_8h.html" title=" " alt="" coords="233,155,423,181"/>
+<area shape="rect" id="node7" href="$PoProcessing_8h.html" title=" " alt="" coords="452,155,647,181"/>
+<area shape="rect" id="node4" href="$CPLProcessing_8cpp.html" title="Process CPL ballot file and save the information of parties, candidates and seats." alt="" coords="23,229,190,256"/>
+<area shape="rect" id="node6" href="$IRVoteSystem_8h.html" title=" " alt="" coords="226,229,425,256"/>
+<area shape="rect" id="node8" href="$PoVoteSystem_8h.html" title=" " alt="" coords="449,229,652,256"/>
+</map>

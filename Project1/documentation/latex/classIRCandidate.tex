@@ -1,0 +1,183 @@
+\hypertarget{classIRCandidate}{}\doxysection{I\+R\+Candidate Class Reference}
+\label{classIRCandidate}\index{IRCandidate@{IRCandidate}}
+
+
+A candidate class for an Instant Runoff \mbox{\hyperlink{classCandidate}{Candidate}}. This classs is for holding ballots.  
+
+
+
+
+{\ttfamily \#include $<$I\+R\+Candidate.\+h$>$}
+
+
+
+Inheritance diagram for I\+R\+Candidate\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classIRCandidate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+R\+Candidate\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classIRCandidate__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIRCandidate_a06e4617c16a060c86a96e913b955402a}{I\+R\+Candidate}} (string name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIRCandidate_a4167a617fffe6b336f88858f24a5c1ac}{I\+R\+Candidate}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRCandidate_ac132bd584a816a3c9cfca84322024377}{add\+Ballot}} (\mbox{\hyperlink{classBallot}{Ballot}} $\ast$ballot\+\_\+)
+\begin{DoxyCompactList}\small\item\em Add a ballot to the candidate. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $\ast$ $>$ \mbox{\hyperlink{classIRCandidate_abe9e7efd62cacc8f2acc504deefd4874}{get\+Ballot\+List}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classBallot}{Ballot}} List object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRCandidate_a8b17eecc72e2d9bf04a9c8a6fae2c2f7}{set\+Ballot\+List}} (vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $\ast$ $>$ list)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classBallot}{Ballot}} List object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIRCandidate_afc25caae107a683405d1ed5b0cf3321f}{get\+Num\+Ballots}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of ballots the IR \mbox{\hyperlink{classCandidate}{Candidate}} has. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRCandidate_a4c62a31cc21faa76ecbdae22a00e52ca}{set\+Num\+Ballots}} (int num\+Ballots\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the number of ballots the IR \mbox{\hyperlink{classCandidate}{Candidate}} has. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallot}{Ballot}} $\ast$ \mbox{\hyperlink{classIRCandidate_a1744779b1b0720bf34055d006f1811c4}{pop\+Ballot}} ()
+\begin{DoxyCompactList}\small\item\em Unused. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIRCandidate_ad57b94a20a21140a205d1b81b52be6b3}\label{classIRCandidate_ad57b94a20a21140a205d1b81b52be6b3}} 
+int \mbox{\hyperlink{classIRCandidate_ad57b94a20a21140a205d1b81b52be6b3}{num\+Ballots}} = 0
+\begin{DoxyCompactList}\small\item\em Holds the number of ballots. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIRCandidate_a4acc20bf505eebe8df0d7dcd93fccd91}\label{classIRCandidate_a4acc20bf505eebe8df0d7dcd93fccd91}} 
+vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $\ast$ $>$ \mbox{\hyperlink{classIRCandidate_a4acc20bf505eebe8df0d7dcd93fccd91}{ballot\+List}}
+\begin{DoxyCompactList}\small\item\em Hold the list of ballots an IR candidate has. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A candidate class for an Instant Runoff \mbox{\hyperlink{classCandidate}{Candidate}}. This classs is for holding ballots. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIRCandidate_a06e4617c16a060c86a96e913b955402a}\label{classIRCandidate_a06e4617c16a060c86a96e913b955402a}} 
+\index{IRCandidate@{IRCandidate}!IRCandidate@{IRCandidate}}
+\index{IRCandidate@{IRCandidate}!IRCandidate@{IRCandidate}}
+\doxysubsubsection{\texorpdfstring{IRCandidate()}{IRCandidate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I\+R\+Candidate\+::\+I\+R\+Candidate (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a string argument for name of \mbox{\hyperlink{classCandidate}{Candidate}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRCandidate_a4167a617fffe6b336f88858f24a5c1ac}\label{classIRCandidate_a4167a617fffe6b336f88858f24a5c1ac}} 
+\index{IRCandidate@{IRCandidate}!IRCandidate@{IRCandidate}}
+\index{IRCandidate@{IRCandidate}!IRCandidate@{IRCandidate}}
+\doxysubsubsection{\texorpdfstring{IRCandidate()}{IRCandidate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily I\+R\+Candidate\+::\+I\+R\+Candidate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classIRCandidate}{I\+R\+Candidate}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIRCandidate_ac132bd584a816a3c9cfca84322024377}\label{classIRCandidate_ac132bd584a816a3c9cfca84322024377}} 
+\index{IRCandidate@{IRCandidate}!addBallot@{addBallot}}
+\index{addBallot@{addBallot}!IRCandidate@{IRCandidate}}
+\doxysubsubsection{\texorpdfstring{addBallot()}{addBallot()}}
+{\footnotesize\ttfamily void I\+R\+Candidate\+::add\+Ballot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallot}{Ballot}} $\ast$}]{ballot\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Add a ballot to the candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+\_\+} & A \mbox{\hyperlink{classBallot}{Ballot}} class input \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRCandidate_abe9e7efd62cacc8f2acc504deefd4874}\label{classIRCandidate_abe9e7efd62cacc8f2acc504deefd4874}} 
+\index{IRCandidate@{IRCandidate}!getBallotList@{getBallotList}}
+\index{getBallotList@{getBallotList}!IRCandidate@{IRCandidate}}
+\doxysubsubsection{\texorpdfstring{getBallotList()}{getBallotList()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classBallot}{Ballot}}$\ast$$>$ I\+R\+Candidate\+::get\+Ballot\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \mbox{\hyperlink{classBallot}{Ballot}} List object. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Ballot$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRCandidate_afc25caae107a683405d1ed5b0cf3321f}\label{classIRCandidate_afc25caae107a683405d1ed5b0cf3321f}} 
+\index{IRCandidate@{IRCandidate}!getNumBallots@{getNumBallots}}
+\index{getNumBallots@{getNumBallots}!IRCandidate@{IRCandidate}}
+\doxysubsubsection{\texorpdfstring{getNumBallots()}{getNumBallots()}}
+{\footnotesize\ttfamily int I\+R\+Candidate\+::get\+Num\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of ballots the IR \mbox{\hyperlink{classCandidate}{Candidate}} has. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRCandidate_a1744779b1b0720bf34055d006f1811c4}\label{classIRCandidate_a1744779b1b0720bf34055d006f1811c4}} 
+\index{IRCandidate@{IRCandidate}!popBallot@{popBallot}}
+\index{popBallot@{popBallot}!IRCandidate@{IRCandidate}}
+\doxysubsubsection{\texorpdfstring{popBallot()}{popBallot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBallot}{Ballot}} $\ast$ I\+R\+Candidate\+::pop\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unused. 
+
+\begin{DoxyReturn}{Returns}
+Ballot$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRCandidate_a8b17eecc72e2d9bf04a9c8a6fae2c2f7}\label{classIRCandidate_a8b17eecc72e2d9bf04a9c8a6fae2c2f7}} 
+\index{IRCandidate@{IRCandidate}!setBallotList@{setBallotList}}
+\index{setBallotList@{setBallotList}!IRCandidate@{IRCandidate}}
+\doxysubsubsection{\texorpdfstring{setBallotList()}{setBallotList()}}
+{\footnotesize\ttfamily void I\+R\+Candidate\+::set\+Ballot\+List (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $\ast$ $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the \mbox{\hyperlink{classBallot}{Ballot}} List object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & vector$<$\+Ballot$\ast$$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRCandidate_a4c62a31cc21faa76ecbdae22a00e52ca}\label{classIRCandidate_a4c62a31cc21faa76ecbdae22a00e52ca}} 
+\index{IRCandidate@{IRCandidate}!setNumBallots@{setNumBallots}}
+\index{setNumBallots@{setNumBallots}!IRCandidate@{IRCandidate}}
+\doxysubsubsection{\texorpdfstring{setNumBallots()}{setNumBallots()}}
+{\footnotesize\ttfamily void I\+R\+Candidate\+::set\+Num\+Ballots (\begin{DoxyParamCaption}\item[{int}]{num\+Ballots\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the number of ballots the IR \mbox{\hyperlink{classCandidate}{Candidate}} has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Ballots\+\_\+} & int \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{IRCandidate_8h}{I\+R\+Candidate.\+h}}\item 
+src/I\+R\+Candidate.\+cpp\end{DoxyCompactItemize}

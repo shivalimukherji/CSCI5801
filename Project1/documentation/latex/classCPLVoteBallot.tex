@@ -1,0 +1,290 @@
+\hypertarget{classCPLVoteBallot}{}\doxysection{C\+P\+L\+Vote\+Ballot Class Reference}
+\label{classCPLVoteBallot}\index{CPLVoteBallot@{CPLVoteBallot}}
+
+
+Inheritance diagram for C\+P\+L\+Vote\+Ballot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classCPLVoteBallot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+P\+L\+Vote\+Ballot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classCPLVoteBallot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCPLVoteBallot_a7832aa9883e1dd1808be54e157971bfe}{C\+P\+L\+Vote\+Ballot}} (std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $\ast$ $>$ parties, std\+::vector$<$ int $>$ map\+Ballot, std\+::vector$<$ int $>$ map\+Allocated, std\+::vector$<$ int $>$ map\+Remain, int num\+Seats, int partt\+Num, int quota\+Num)
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $\ast$ $>$ \mbox{\hyperlink{classCPLVoteBallot_a82801cfc1109bf10dee5232e1a9989c3}{get\+Parties}} () const
+\begin{DoxyCompactList}\small\item\em Get list of parties that participate election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPLVoteBallot_a7ab2b531abe2c8afa247121d15d11a9e}{set\+Parties}} (const std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $\ast$ $>$ \&parties\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set a list of parties that participate election. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCPLVoteBallot_a78b0c2d24b2b3a498d8831fe334ecfb4}{get\+Map\+Allocated\+Seat}} () const
+\begin{DoxyCompactList}\small\item\em Get the map of allocated seat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPLVoteBallot_aa0e71d0c77e968699e7de5bb3f3e3ecb}{set\+Map\+Allocated\+Seat}} (const std\+::vector$<$ int $>$ \&map\+Allocated\+Seat\+\_\+)
+\begin{DoxyCompactList}\small\item\em Get the map of allocated seat. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCPLVoteBallot_a9d9aaa6f014b09167598e9af5b2b0d41}{get\+Map\+Remain\+Seat}} () const
+\begin{DoxyCompactList}\small\item\em Get the map of remaining seats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPLVoteBallot_aeefb0cc53b56602b6240c0d6da0111bd}{set\+Map\+Remain\+Seat}} (const std\+::vector$<$ int $>$ \&map\+Remain\+Seat\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the map of remaining seats. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPLVoteBallot_aa6008cd8135ba3266e47c7b0464c953f}{get\+Seats}} () const
+\begin{DoxyCompactList}\small\item\em Get the total number of seats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPLVoteBallot_adaa58912d8a03571de39bd259a8a784b}{set\+Seats}} (int seats\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the total number of seats. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCPLVoteBallot_aeeace7162d7be7fc4d58a93847cedf83}{get\+Map\+Ballot}} () const
+\begin{DoxyCompactList}\small\item\em Get the map of ballots. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPLVoteBallot_acf6c492fa12c6bcd0b1f63709af14a28}{get\+Num\+Parties}} () const
+\begin{DoxyCompactList}\small\item\em Get the total number of parties. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPLVoteBallot_aacebfc77a8c127811af125f58d57ad52}{get\+Quota}} () const
+\begin{DoxyCompactList}\small\item\em Get the quota value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCPLVoteBallot_a7832aa9883e1dd1808be54e157971bfe}\label{classCPLVoteBallot_a7832aa9883e1dd1808be54e157971bfe}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!CPLVoteBallot@{CPLVoteBallot}}
+\index{CPLVoteBallot@{CPLVoteBallot}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{CPLVoteBallot()}{CPLVoteBallot()}}
+{\footnotesize\ttfamily C\+P\+L\+Vote\+Ballot\+::\+C\+P\+L\+Vote\+Ballot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $\ast$ $>$}]{parties,  }\item[{std\+::vector$<$ int $>$}]{map\+Ballot,  }\item[{std\+::vector$<$ int $>$}]{map\+Allocated,  }\item[{std\+::vector$<$ int $>$}]{map\+Remain,  }\item[{int}]{num\+Seats,  }\item[{int}]{partt\+Num,  }\item[{int}]{quota\+Num }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{classCPLVoteBallot}{C\+P\+L\+Vote\+Ballot}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parties} & list of parties that participate election \\
+\hline
+{\em map\+Ballot} & map of parties and their total number of ballots received \\
+\hline
+{\em map\+Allocated} & map of parites and the number of seats they received \\
+\hline
+{\em map\+Remain} & map of parties and the number of remaining ballots \\
+\hline
+{\em num\+Seat} & total number of seats \\
+\hline
+{\em party\+Num} & total number of parties \\
+\hline
+{\em quota\+Num} & quota value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPLVoteBallot_a78b0c2d24b2b3a498d8831fe334ecfb4}\label{classCPLVoteBallot_a78b0c2d24b2b3a498d8831fe334ecfb4}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!getMapAllocatedSeat@{getMapAllocatedSeat}}
+\index{getMapAllocatedSeat@{getMapAllocatedSeat}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getMapAllocatedSeat()}{getMapAllocatedSeat()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ C\+P\+L\+Vote\+Ballot\+::get\+Map\+Allocated\+Seat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the map of allocated seat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parties\+\_\+} & the new list of parties \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_aeeace7162d7be7fc4d58a93847cedf83}\label{classCPLVoteBallot_aeeace7162d7be7fc4d58a93847cedf83}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!getMapBallot@{getMapBallot}}
+\index{getMapBallot@{getMapBallot}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getMapBallot()}{getMapBallot()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ C\+P\+L\+Vote\+Ballot\+::get\+Map\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the map of ballots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_a9d9aaa6f014b09167598e9af5b2b0d41}\label{classCPLVoteBallot_a9d9aaa6f014b09167598e9af5b2b0d41}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!getMapRemainSeat@{getMapRemainSeat}}
+\index{getMapRemainSeat@{getMapRemainSeat}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getMapRemainSeat()}{getMapRemainSeat()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ C\+P\+L\+Vote\+Ballot\+::get\+Map\+Remain\+Seat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the map of remaining seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_acf6c492fa12c6bcd0b1f63709af14a28}\label{classCPLVoteBallot_acf6c492fa12c6bcd0b1f63709af14a28}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!getNumParties@{getNumParties}}
+\index{getNumParties@{getNumParties}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getNumParties()}{getNumParties()}}
+{\footnotesize\ttfamily int C\+P\+L\+Vote\+Ballot\+::get\+Num\+Parties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the total number of parties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_a82801cfc1109bf10dee5232e1a9989c3}\label{classCPLVoteBallot_a82801cfc1109bf10dee5232e1a9989c3}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!getParties@{getParties}}
+\index{getParties@{getParties}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getParties()}{getParties()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classParty}{Party}}$\ast$$>$ C\+P\+L\+Vote\+Ballot\+::get\+Parties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get list of parties that participate election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Party$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_aacebfc77a8c127811af125f58d57ad52}\label{classCPLVoteBallot_aacebfc77a8c127811af125f58d57ad52}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!getQuota@{getQuota}}
+\index{getQuota@{getQuota}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getQuota()}{getQuota()}}
+{\footnotesize\ttfamily int C\+P\+L\+Vote\+Ballot\+::get\+Quota (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the quota value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_aa6008cd8135ba3266e47c7b0464c953f}\label{classCPLVoteBallot_aa6008cd8135ba3266e47c7b0464c953f}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!getSeats@{getSeats}}
+\index{getSeats@{getSeats}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{getSeats()}{getSeats()}}
+{\footnotesize\ttfamily int C\+P\+L\+Vote\+Ballot\+::get\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the total number of seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_aa0e71d0c77e968699e7de5bb3f3e3ecb}\label{classCPLVoteBallot_aa0e71d0c77e968699e7de5bb3f3e3ecb}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!setMapAllocatedSeat@{setMapAllocatedSeat}}
+\index{setMapAllocatedSeat@{setMapAllocatedSeat}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{setMapAllocatedSeat()}{setMapAllocatedSeat()}}
+{\footnotesize\ttfamily void C\+P\+L\+Vote\+Ballot\+::set\+Map\+Allocated\+Seat (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{map\+Allocated\+Seat\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the map of allocated seat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Allocated\+Seat\+\_\+} & the new map of allocated seat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_aeefb0cc53b56602b6240c0d6da0111bd}\label{classCPLVoteBallot_aeefb0cc53b56602b6240c0d6da0111bd}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!setMapRemainSeat@{setMapRemainSeat}}
+\index{setMapRemainSeat@{setMapRemainSeat}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{setMapRemainSeat()}{setMapRemainSeat()}}
+{\footnotesize\ttfamily void C\+P\+L\+Vote\+Ballot\+::set\+Map\+Remain\+Seat (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{map\+Remain\+Seat\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the map of remaining seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Remain\+Seat\+\_\+} & the new map of remaining seats \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_a7ab2b531abe2c8afa247121d15d11a9e}\label{classCPLVoteBallot_a7ab2b531abe2c8afa247121d15d11a9e}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!setParties@{setParties}}
+\index{setParties@{setParties}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{setParties()}{setParties()}}
+{\footnotesize\ttfamily void C\+P\+L\+Vote\+Ballot\+::set\+Parties (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $\ast$ $>$ \&}]{parties\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set a list of parties that participate election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLVoteBallot_adaa58912d8a03571de39bd259a8a784b}\label{classCPLVoteBallot_adaa58912d8a03571de39bd259a8a784b}} 
+\index{CPLVoteBallot@{CPLVoteBallot}!setSeats@{setSeats}}
+\index{setSeats@{setSeats}!CPLVoteBallot@{CPLVoteBallot}}
+\doxysubsubsection{\texorpdfstring{setSeats()}{setSeats()}}
+{\footnotesize\ttfamily void C\+P\+L\+Vote\+Ballot\+::set\+Seats (\begin{DoxyParamCaption}\item[{int}]{seats\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the total number of seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seats\+\_\+} & tota number of seat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{CPLVoteBallot_8h}{C\+P\+L\+Vote\+Ballot.\+h}}\item 
+src/\mbox{\hyperlink{CPLVoteBallot_8cpp}{C\+P\+L\+Vote\+Ballot.\+cpp}}\end{DoxyCompactItemize}

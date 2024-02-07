@@ -1,0 +1,4 @@
+<map id="IRCandidate" name="IRCandidate">
+<area shape="rect" id="node1" title="A candidate class for an Instant Runoff Candidate. This classs is for holding ballots." alt="" coords="5,80,107,107"/>
+<area shape="rect" id="node2" href="$classCandidate.html" title="An output class from the IBallotProcessing interface. This class holds objects/information for an ele..." alt="" coords="12,5,100,32"/>
+</map>

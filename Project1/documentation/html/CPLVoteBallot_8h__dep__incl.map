@@ -1,0 +1,8 @@
+<map id="src/include/CPLVoteBallot.h" name="src/include/CPLVoteBallot.h">
+<area shape="rect" id="node1" title="CPLVoteBallot saves information of election." alt="" coords="214,5,413,32"/>
+<area shape="rect" id="node2" href="$CPLProcessing_8h.html" title="Process CPL ballot file and save the information of parties, candidates and seats." alt="" coords="5,80,208,107"/>
+<area shape="rect" id="node4" href="$CPLVoteBallot_8cpp.html" title="Initiate CPLVoteBallot." alt="" coords="232,80,395,107"/>
+<area shape="rect" id="node5" href="$CPLVoteSystem_8h.html" title="Conduct election and show winners." alt="" coords="419,80,629,107"/>
+<area shape="rect" id="node3" href="$CPLProcessing_8cpp.html" title="Process CPL ballot file and save the information of parties, candidates and seats." alt="" coords="23,155,190,181"/>
+<area shape="rect" id="node6" href="$CPLVoteSystem_8cpp.html" title="Conduct election according to CPL rules and show the winners." alt="" coords="437,155,611,181"/>
+</map>

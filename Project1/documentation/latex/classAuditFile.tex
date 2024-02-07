@@ -1,0 +1,230 @@
+\hypertarget{classAuditFile}{}\doxysection{Audit\+File Class Reference}
+\label{classAuditFile}\index{AuditFile@{AuditFile}}
+
+
+The \mbox{\hyperlink{classAuditFile}{Audit\+File}} class represents a file that logs information about a voting audit.  
+
+
+
+
+{\ttfamily \#include $<$Audit\+File.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAuditFile_acb7e67ba2424b3b4adbc052e05c19b06}\label{classAuditFile_acb7e67ba2424b3b4adbc052e05c19b06}} 
+\mbox{\hyperlink{classAuditFile_acb7e67ba2424b3b4adbc052e05c19b06}{Audit\+File}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classAuditFile}{Audit\+File}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAuditFile_a7633a95c45ba145e4a2d640f88450699}{Audit\+File}} (string output\+\_\+result)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classAuditFile}{Audit\+File}} class that takes a file name as an argument. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAuditFile_a049def050e809c4c3872d21725e3137d}\label{classAuditFile_a049def050e809c4c3872d21725e3137d}} 
+void {\bfseries open} ()
+\item 
+\mbox{\Hypertarget{classAuditFile_a7b1f002e33b8c4cd0ce0b2c57eafb0d4}\label{classAuditFile_a7b1f002e33b8c4cd0ce0b2c57eafb0d4}} 
+void {\bfseries close} ()
+\item 
+void \mbox{\hyperlink{classAuditFile_a24d0a75ebe120dd1570ca40c1ba5ff7e}{label\+File}} (string name)
+\begin{DoxyCompactList}\small\item\em A function to label a file with a specific name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAuditFile_a83965e3331001d80b4197236e00f8180}\label{classAuditFile_a83965e3331001d80b4197236e00f8180}} 
+void \mbox{\hyperlink{classAuditFile_a83965e3331001d80b4197236e00f8180}{produce\+File}} ()
+\begin{DoxyCompactList}\small\item\em A function to create a new file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAuditFile_aeadb598b1c7c7ecd2a807c2566879040}{write}} (string output\+\_\+result, bool new\+Line=true)
+\begin{DoxyCompactList}\small\item\em A function to write the output into the file. \end{DoxyCompactList}\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classAuditFile_a6b52c436dca5b52273e41e49554e51bd}{get\+File}} () const
+\begin{DoxyCompactList}\small\item\em Getter function for the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAuditFile_a1ae9a623b468b184be342cdb54fc0e7f}{set\+File}} (F\+I\+LE $\ast$file\+\_\+)
+\begin{DoxyCompactList}\small\item\em Setter function for the file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAuditFile_afdc500925828c4014dce937cef87a63b}\label{classAuditFile_afdc500925828c4014dce937cef87a63b}} 
+string \mbox{\hyperlink{classAuditFile_afdc500925828c4014dce937cef87a63b}{get\+Output\+Result}} () const
+\begin{DoxyCompactList}\small\item\em Getter function for the ouput. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAuditFile_a56d91a1fdbe6a0aa42ee160eb448053b}{set\+Output\+Result}} (const string \&output\+Result)
+\begin{DoxyCompactList}\small\item\em Setter function for the output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAuditFile_ac15f55cbae8f4195fa560a1610bc83fa}{set\+Name}} (const string \&name\+\_\+)
+\begin{DoxyCompactList}\small\item\em Setter function for the name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAuditFile_a18fbf907c98b4620296071c378e4a0f1}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em getter function for the name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAuditFile_ab5f6da18d590de66236a0fdf53bd9496}{get\+File\+Name}} () const
+\begin{DoxyCompactList}\small\item\em getter function for the name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAuditFile_a0364ceacd2716129ec36cafac7c670f4}{set\+File\+Name}} (const string \&file\+Name\+\_\+)
+\begin{DoxyCompactList}\small\item\em Setter function for the file name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAuditFile_a85ecdce2de6ca4c56fb6c940ca770847}\label{classAuditFile_a85ecdce2de6ca4c56fb6c940ca770847}} 
+ofstream \& \mbox{\hyperlink{classAuditFile_a85ecdce2de6ca4c56fb6c940ca770847}{get\+File\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em Getter functions for file\+Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAuditFile_a2f0a7439efd8c6d2849c65974d73f6bf}\label{classAuditFile_a2f0a7439efd8c6d2849c65974d73f6bf}} 
+F\+I\+LE $\ast$ {\bfseries file}
+\item 
+\mbox{\Hypertarget{classAuditFile_a3a325a95fcabbd2b9fbe2f52c7de8e89}\label{classAuditFile_a3a325a95fcabbd2b9fbe2f52c7de8e89}} 
+ofstream {\bfseries file\+Stream}
+\item 
+\mbox{\Hypertarget{classAuditFile_a7ae4a3c06585dde2a6a34652405e5e99}\label{classAuditFile_a7ae4a3c06585dde2a6a34652405e5e99}} 
+string {\bfseries output\+\_\+result}
+\item 
+\mbox{\Hypertarget{classAuditFile_ac532cc68f24e8bb790cef78ccb0e58aa}\label{classAuditFile_ac532cc68f24e8bb790cef78ccb0e58aa}} 
+string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classAuditFile_a978b0989bb2dff18e47db81f89243169}\label{classAuditFile_a978b0989bb2dff18e47db81f89243169}} 
+string {\bfseries file\+Name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classAuditFile}{Audit\+File}} class represents a file that logs information about a voting audit. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAuditFile_a7633a95c45ba145e4a2d640f88450699}\label{classAuditFile_a7633a95c45ba145e4a2d640f88450699}} 
+\index{AuditFile@{AuditFile}!AuditFile@{AuditFile}}
+\index{AuditFile@{AuditFile}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{AuditFile()}{AuditFile()}}
+{\footnotesize\ttfamily Audit\+File\+::\+Audit\+File (\begin{DoxyParamCaption}\item[{string}]{output\+\_\+result }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classAuditFile}{Audit\+File}} class that takes a file name as an argument. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+\_\+result} & is the parameter \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAuditFile_a6b52c436dca5b52273e41e49554e51bd}\label{classAuditFile_a6b52c436dca5b52273e41e49554e51bd}} 
+\index{AuditFile@{AuditFile}!getFile@{getFile}}
+\index{getFile@{getFile}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{getFile()}{getFile()}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ Audit\+File\+::get\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter function for the file. 
+
+\mbox{\Hypertarget{classAuditFile_ab5f6da18d590de66236a0fdf53bd9496}\label{classAuditFile_ab5f6da18d590de66236a0fdf53bd9496}} 
+\index{AuditFile@{AuditFile}!getFileName@{getFileName}}
+\index{getFileName@{getFileName}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{getFileName()}{getFileName()}}
+{\footnotesize\ttfamily string Audit\+File\+::get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+getter function for the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & file name variable will return the file name variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAuditFile_a18fbf907c98b4620296071c378e4a0f1}\label{classAuditFile_a18fbf907c98b4620296071c378e4a0f1}} 
+\index{AuditFile@{AuditFile}!getName@{getName}}
+\index{getName@{getName}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Audit\+File\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+getter function for the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & name will return the name variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAuditFile_a24d0a75ebe120dd1570ca40c1ba5ff7e}\label{classAuditFile_a24d0a75ebe120dd1570ca40c1ba5ff7e}} 
+\index{AuditFile@{AuditFile}!labelFile@{labelFile}}
+\index{labelFile@{labelFile}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{labelFile()}{labelFile()}}
+{\footnotesize\ttfamily void Audit\+File\+::label\+File (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+A function to label a file with a specific name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the file to be labeled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAuditFile_a1ae9a623b468b184be342cdb54fc0e7f}\label{classAuditFile_a1ae9a623b468b184be342cdb54fc0e7f}} 
+\index{AuditFile@{AuditFile}!setFile@{setFile}}
+\index{setFile@{setFile}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{setFile()}{setFile()}}
+{\footnotesize\ttfamily void Audit\+File\+::set\+File (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter function for the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+\_\+result} & The output to be written to the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAuditFile_a0364ceacd2716129ec36cafac7c670f4}\label{classAuditFile_a0364ceacd2716129ec36cafac7c670f4}} 
+\index{AuditFile@{AuditFile}!setFileName@{setFileName}}
+\index{setFileName@{setFileName}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{setFileName()}{setFileName()}}
+{\footnotesize\ttfamily void Audit\+File\+::set\+File\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter function for the file name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & name will set to the file name variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAuditFile_ac15f55cbae8f4195fa560a1610bc83fa}\label{classAuditFile_ac15f55cbae8f4195fa560a1610bc83fa}} 
+\index{AuditFile@{AuditFile}!setName@{setName}}
+\index{setName@{setName}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Audit\+File\+::set\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{name\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter function for the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & name will set to the name variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAuditFile_a56d91a1fdbe6a0aa42ee160eb448053b}\label{classAuditFile_a56d91a1fdbe6a0aa42ee160eb448053b}} 
+\index{AuditFile@{AuditFile}!setOutputResult@{setOutputResult}}
+\index{setOutputResult@{setOutputResult}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{setOutputResult()}{setOutputResult()}}
+{\footnotesize\ttfamily void Audit\+File\+::set\+Output\+Result (\begin{DoxyParamCaption}\item[{const string \&}]{output\+Result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter function for the output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Result} & The output to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAuditFile_aeadb598b1c7c7ecd2a807c2566879040}\label{classAuditFile_aeadb598b1c7c7ecd2a807c2566879040}} 
+\index{AuditFile@{AuditFile}!write@{write}}
+\index{write@{write}!AuditFile@{AuditFile}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Audit\+File\+::write (\begin{DoxyParamCaption}\item[{string}]{output\+\_\+result,  }\item[{bool}]{new\+Line = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+A function to write the output into the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+\_\+result} & The output to be written to the file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{AuditFile_8h}{Audit\+File.\+h}}\item 
+src/Audit\+File.\+cpp\end{DoxyCompactItemize}

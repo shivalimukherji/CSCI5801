@@ -1,0 +1,8 @@
+<map id="IRBallotTests" name="IRBallotTests">
+<area shape="rect" id="node1" title=" " alt="" coords="75,215,181,241"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,53,108"/>
+<area shape="rect" id="node3" href="$classIRCandidate.html" title="A candidate class for an Instant Runoff Candidate. This classs is for holding ballots." alt="" coords="77,81,179,108"/>
+<area shape="rect" id="node4" href="$classCandidate.html" title="An output class from the IBallotProcessing interface. This class holds objects/information for an ele..." alt="" coords="83,5,171,32"/>
+<area shape="rect" id="node5" href="$classIRBallot.html" title="An output class from the IR Processing class. This class holds objects/information for the IR Vote Sy..." alt="" coords="205,81,278,108"/>
+<area shape="rect" id="node6" href="$classIVoteBallot.html" title="The abstract class where all VoteBallots are inherited from." alt="" coords="195,5,290,32"/>
+</map>

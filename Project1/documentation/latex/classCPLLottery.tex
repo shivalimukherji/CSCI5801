@@ -1,0 +1,119 @@
+\hypertarget{classCPLLottery}{}\doxysection{C\+P\+L\+Lottery Class Reference}
+\label{classCPLLottery}\index{CPLLottery@{CPLLottery}}
+
+
+A class representing a special case for a lottery process for a set of parties in a voting system.  
+
+
+
+
+{\ttfamily \#include $<$I\+C\+P\+L\+Lottery.\+h$>$}
+
+
+
+Inheritance diagram for C\+P\+L\+Lottery\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classCPLLottery__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+P\+L\+Lottery\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classCPLLottery__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPLLottery_aa72d44ec570963fa2a5bb9599a3ec001}\label{classCPLLottery_aa72d44ec570963fa2a5bb9599a3ec001}} 
+\mbox{\hyperlink{classCPLLottery_aa72d44ec570963fa2a5bb9599a3ec001}{C\+P\+L\+Lottery}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classCPLLottery}{C\+P\+L\+Lottery}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCPLLottery_a15e3730e17d0203ed120939f5cd23e68}{C\+P\+L\+Lottery}} (\mbox{\hyperlink{classParty}{Party}}\mbox{[}$\,$\mbox{]} parties)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classCPLLottery}{C\+P\+L\+Lottery}} class that takes an array of parties as input. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCPLLottery_a5f19393da1b5223f03f41ed65e9b4b2d}{result1000}} () const
+\begin{DoxyCompactList}\small\item\em Getter function for the result of the lottery process after 1000 runs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPLLottery_a2b23135d0705b11f3ed858f5d9cf3b6c}{set\+Result1000}} (const string \&\mbox{\hyperlink{classCPLLottery_a5f19393da1b5223f03f41ed65e9b4b2d}{result1000}})
+\begin{DoxyCompactList}\small\item\em Setter function for the result of the lottery process after 1000 runs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPLLottery_afb74937f600113e7f4f0d101b6e450fb}\label{classCPLLottery_afb74937f600113e7f4f0d101b6e450fb}} 
+\mbox{\hyperlink{classParty}{Party}} {\bfseries result}
+\item 
+\mbox{\Hypertarget{classCPLLottery_ad452004786727a777998eb4551da2d28}\label{classCPLLottery_ad452004786727a777998eb4551da2d28}} 
+std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$ {\bfseries parties}
+\item 
+\mbox{\Hypertarget{classCPLLottery_a1bb337848529e06bc77d554837cddba4}\label{classCPLLottery_a1bb337848529e06bc77d554837cddba4}} 
+string {\bfseries result\+\_\+1000}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a special case for a lottery process for a set of parties in a voting system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & \mbox{\hyperlink{classCPLLottery}{C\+P\+L\+Lottery}} class inherits from the \mbox{\hyperlink{classISpecialCase}{I\+Special\+Case}} interface class. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCPLLottery_a15e3730e17d0203ed120939f5cd23e68}\label{classCPLLottery_a15e3730e17d0203ed120939f5cd23e68}} 
+\index{CPLLottery@{CPLLottery}!CPLLottery@{CPLLottery}}
+\index{CPLLottery@{CPLLottery}!CPLLottery@{CPLLottery}}
+\doxysubsubsection{\texorpdfstring{CPLLottery()}{CPLLottery()}}
+{\footnotesize\ttfamily C\+P\+L\+Lottery\+::\+C\+P\+L\+Lottery (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParty}{Party}}\mbox{[}$\,$\mbox{]}}]{parties }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classCPLLottery}{C\+P\+L\+Lottery}} class that takes an array of parties as input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parties} & An array of parties to be used in the lottery process. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPLLottery_a5f19393da1b5223f03f41ed65e9b4b2d}\label{classCPLLottery_a5f19393da1b5223f03f41ed65e9b4b2d}} 
+\index{CPLLottery@{CPLLottery}!result1000@{result1000}}
+\index{result1000@{result1000}!CPLLottery@{CPLLottery}}
+\doxysubsubsection{\texorpdfstring{result1000()}{result1000()}}
+{\footnotesize\ttfamily string C\+P\+L\+Lottery\+::result1000 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter function for the result of the lottery process after 1000 runs. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the result of the lottery process after 1000 runs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPLLottery_a2b23135d0705b11f3ed858f5d9cf3b6c}\label{classCPLLottery_a2b23135d0705b11f3ed858f5d9cf3b6c}} 
+\index{CPLLottery@{CPLLottery}!setResult1000@{setResult1000}}
+\index{setResult1000@{setResult1000}!CPLLottery@{CPLLottery}}
+\doxysubsubsection{\texorpdfstring{setResult1000()}{setResult1000()}}
+{\footnotesize\ttfamily void C\+P\+L\+Lottery\+::set\+Result1000 (\begin{DoxyParamCaption}\item[{const string \&}]{result1000 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter function for the result of the lottery process after 1000 runs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result1000} & A string representing the result of the lottery process after 1000 runs. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{ICPLLottery_8h}{I\+C\+P\+L\+Lottery.\+h}}\end{DoxyCompactItemize}
